@@ -2,7 +2,7 @@
 title: "Process Mining for Business Central in an AI and MCP World"
 date: 2026-07-18T15:13:49Z
 lastmod: 2026-07-18T15:13:49Z
-tags: ["d365bc", "copilot", "ai", "powerplatform"]
+tags: ["d365bc", "copilot", "ai", "power platform"]
 hero: ""
 heroCaption: ""
 author: "Andy Wingate"
