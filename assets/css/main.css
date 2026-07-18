@@ -221,7 +221,7 @@ main { padding-block: 2.5rem 3.5rem; min-height: 60vh; }
 h1, h2, h3, h4 {
   color: var(--heading);
   line-height: 1.25;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: -0.015em;
   font-family: var(--font-display);
 }
