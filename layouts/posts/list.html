@@ -1,0 +1,51 @@
+{{ define "main" }}
+<div class="container container-wide">
+  <div class="archive-layout">
+
+    <aside class="archive-nav" aria-label="Post archive">
+      <h2 class="widget-title">Archive</h2>
+      <nav class="archive-tree">
+        {{- range $i, $yg := .Pages.GroupByDate "2006" }}
+        <details class="archive-year"{{ if eq $i 0 }} open{{ end }}>
+          <summary>{{ $yg.Key }} <span class="archive-count">{{ len $yg.Pages }}</span></summary>
+          <ul>
+            {{- range $yg.Pages.GroupByDate "January" }}
+            <li><a href="#m-{{ (index .Pages 0).Date.Format "2006-01" }}">{{ .Key }} <span class="archive-count">{{ len .Pages }}</span></a></li>
+            {{- end }}
+          </ul>
+        </details>
+        {{- end }}
+      </nav>
+    </aside>
+
+    <div class="archive-main">
+      <header class="page-header">
+        <h1 class="page-title">{{ .Title }}</h1>
+        <p class="muted">{{ len .Pages }} post{{ if ne (len .Pages) 1 }}s{{ end }}</p>
+      </header>
+
+      {{- range .Pages.GroupByDate "2006" }}
+      <section class="archive-year-block" id="year-{{ .Key }}">
+        <h2 class="archive-year-heading">{{ .Key }}</h2>
+        {{- range .Pages.GroupByDate "January" }}
+        <div class="archive-month" id="m-{{ (index .Pages 0).Date.Format "2006-01" }}">
+          <h3 class="archive-month-heading">{{ .Key }}</h3>
+          <ul class="archive-posts">
+            {{- range .Pages }}
+            <li>
+              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan" }}</time>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+            {{- end }}
+          </ul>
+        </div>
+        {{- end }}
+      </section>
+      {{- else }}
+      <p class="muted">No posts yet.</p>
+      {{- end }}
+    </div>
+
+  </div>
+</div>
+{{ end }}

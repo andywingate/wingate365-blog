@@ -1,0 +1,19 @@
+<article class="post-card has-thumb">
+  <a class="post-card-thumb" href="{{ .RelPermalink }}" aria-hidden="true" tabindex="-1">
+    {{ partial "post-thumb.html" . }}
+  </a>
+  <div class="post-card-body">
+    <div class="post-card-meta">
+      {{- with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2 Jan 2006" }}</time>{{ end }}
+    </div>
+    <h3 class="post-card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    {{- with .Summary }}<p class="post-card-summary">{{ . | plainify | truncate 180 }}</p>{{ end }}
+    {{- with .Params.tags }}
+    <ul class="post-card-tags">
+      {{- range first 4 . }}
+      <li><a class="tag-pill sm" href="{{ (printf "/tags/%s" (. | urlize)) | relURL }}">{{ . }}</a></li>
+      {{- end }}
+    </ul>
+    {{- end }}
+  </div>
+</article>

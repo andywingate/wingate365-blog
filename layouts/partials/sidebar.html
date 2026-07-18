@@ -1,0 +1,41 @@
+<aside class="sidebar" aria-label="Sidebar">
+
+  {{- with .Site.Params.mvpProfileURL }}
+  <div class="widget widget-mvp">
+    <a href="{{ . }}" rel="noopener" aria-label="Microsoft MVP profile">
+      <img src="{{ "images/mvp-badge.png" | relURL }}" alt="Microsoft Most Valuable Professional" loading="lazy" width="260" height="102">
+    </a>
+  </div>
+  {{- end }}
+
+  {{- with .Site.Params.linkedInFollowURL }}
+  <div class="widget">
+    <h2 class="widget-title">Follow me on LinkedIn</h2>
+    <a class="btn-follow" href="{{ . }}" rel="noopener">Click to follow</a>
+  </div>
+  {{- end }}
+
+  {{- $tags := .Site.Taxonomies.tags }}
+  {{- if $tags }}
+  <div class="widget">
+    <h2 class="widget-title">Tags</h2>
+    <ul class="widget-tags">
+      {{- range $name, $pages := $tags }}
+      <li><a class="tag-pill sm" href="{{ (printf "/tags/%s" ($name | urlize)) | relURL }}">{{ $name }} <span class="tag-count">{{ len $pages }}</span></a></li>
+      {{- end }}
+    </ul>
+  </div>
+  {{- end }}
+
+  {{- with .Site.Params.social }}
+  <div class="widget">
+    <h2 class="widget-title">Links</h2>
+    <ul class="widget-cloud">
+      {{- range . }}
+      <li><a class="tag-pill" href="{{ .url }}" rel="noopener">{{ .name }}</a></li>
+      {{- end }}
+    </ul>
+  </div>
+  {{- end }}
+
+</aside>

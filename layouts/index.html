@@ -1,0 +1,53 @@
+{{ define "main" }}
+<div class="container container-wide">
+  <div class="home-layout">
+    <div class="home-main">
+      <h1 class="visually-hidden">{{ .Site.Title }} - {{ .Site.Params.description }}</h1>
+
+      {{ $posts := where .Site.RegularPages "Section" "posts" }}
+      {{ $paginator := .Paginate $posts }}
+
+      {{- if eq $paginator.PageNumber 1 }}
+        {{- $featured := index $paginator.Pages 0 }}
+        {{- with $featured }}
+        <article class="featured has-hero">
+          <a class="featured-media" href="{{ .RelPermalink }}" aria-hidden="true" tabindex="-1">
+            {{ partial "post-thumb.html" . }}
+          </a>
+          <div class="featured-body">
+            <span class="featured-flag">Latest post</span>
+            <h2 class="featured-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            <div class="featured-meta">
+              {{- with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2 January 2006" }}</time>{{ end }}
+              {{- if and .Site.Params.showReadingTime .WordCount }}<span class="dot">&middot;</span><span>{{ .ReadingTime }} min read</span>{{ end }}
+            </div>
+            {{- with .Summary }}<p class="featured-summary">{{ . | plainify | truncate 240 }}</p>{{ end }}
+            <a class="featured-more" href="{{ .RelPermalink }}">Read post &rarr;</a>
+          </div>
+        </article>
+        {{- end }}
+
+        <section class="post-list" aria-label="More posts">
+          <h2 class="section-heading">More posts</h2>
+          {{- range after 1 $paginator.Pages }}
+            {{ partial "post-card.html" . }}
+          {{- else }}
+            <p class="muted">No more posts yet.</p>
+          {{- end }}
+        </section>
+      {{- else }}
+        <section class="post-list" aria-label="Posts">
+          <h2 class="section-heading">More posts</h2>
+          {{- range $paginator.Pages }}
+            {{ partial "post-card.html" . }}
+          {{- end }}
+        </section>
+      {{- end }}
+
+      {{ partial "pagination.html" . }}
+    </div>
+
+    {{ partial "sidebar.html" . }}
+  </div>
+</div>
+{{ end }}

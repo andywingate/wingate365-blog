@@ -1,0 +1,44 @@
+{{- $title := .Title -}}
+{{- $siteTitle := .Site.Title -}}
+{{- $isHome := .IsHome -}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#12212e">
+
+{{- if $isHome }}
+<title>{{ $siteTitle }}{{ with .Site.Params.subtitle }} · {{ . }}{{ end }}</title>
+{{- else }}
+<title>{{ $title }} · {{ $siteTitle }}</title>
+{{- end }}
+
+{{- $desc := "" }}
+{{- with .Description }}{{ $desc = . }}{{ else }}{{ $desc = .Summary | default .Site.Params.description }}{{ end }}
+<meta name="description" content="{{ $desc | plainify | truncate 160 }}">
+{{- with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="{{ $siteTitle }}">
+<meta property="og:title" content="{{ if $isHome }}{{ $siteTitle }}{{ else }}{{ $title }}{{ end }}">
+<meta property="og:description" content="{{ $desc | plainify | truncate 160 }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta name="twitter:card" content="summary">
+
+{{- range .AlternativeOutputFormats }}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $siteTitle }}">
+{{- end }}
+
+<link rel="icon" href="{{ "favicon.ico" | relURL }}">
+
+{{- $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+<script>
+  (function () {
+    var stored = localStorage.getItem('theme');
+    if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+</script>

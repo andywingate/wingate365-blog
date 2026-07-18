@@ -1,0 +1,89 @@
+baseURL = "https://blog.wingate365.com/"
+locale = "en-gb"
+title = "Wingate365"
+enableRobotsTXT = true
+enableEmoji = true
+enableGitInfo = false
+
+# Preserve the legacy Blogger URL shape: /YYYY/MM/slug.html
+# uglyURLs appends .html, so the permalink pattern must NOT include it
+[permalinks]
+  posts = "/:year/:month/:slug"
+
+# Emit posts as flat .html files (no trailing-slash directory) to match Blogger exactly
+[uglyURLs]
+  posts = true
+
+[taxonomies]
+  tag = "tags"
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = "Business Central, Dynamics 365, Microsoft cloud and technology notes by Andy Wingate."
+  author = "Andy Wingate"
+  subtitle = "Business Central, Dynamics 365 and Microsoft cloud notes"
+  # Set to true to show a reading-time estimate on posts
+  showReadingTime = true
+  # Microsoft MVP profile
+  mvpProfileURL = "https://mvp.microsoft.com/en-US/mvp/profile/3c127afb-1aa7-44b4-a0a1-12fafa5ffaf6"
+  linkedInFollowURL = "https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=andywingate"
+
+# Sidebar link list (home page right column)
+[[params.social]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/andywingate/"
+[[params.social]]
+  name = "BlueSky"
+  url = "https://bsky.app/profile/wingate365.com"
+[[params.social]]
+  name = "YouTube"
+  url = "https://www.youtube.com/@wingate365"
+[[params.social]]
+  name = "GitHub"
+  url = "https://github.com/andywingate"
+[[params.social]]
+  name = "MVP Profile"
+  url = "https://mvp.microsoft.com/en-US/mvp/profile/3c127afb-1aa7-44b4-a0a1-12fafa5ffaf6"
+[[params.social]]
+  name = "Email"
+  url = "mailto:andy@wingate365.com"
+
+[author]
+  name = "Andy Wingate"
+
+# Allow raw HTML in content (needed for migrated Blogger posts)
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    noClasses = false
+    style = "github"
+    lineNos = false
+    tabWidth = 2
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[menus]
+  [[menus.main]]
+    name = "Posts"
+    pageRef = "/posts"
+    weight = 10
+  [[menus.main]]
+    name = "Tags"
+    pageRef = "/tags"
+    weight = 20
+  [[menus.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+
+[services]
+  [services.rss]
+    limit = 20

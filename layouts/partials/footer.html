@@ -1,0 +1,9 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; {{ now.Year }} {{ .Site.Params.author | default .Site.Title }}.</p>
+    <p>
+      Built with <a href="https://gohugo.io/" rel="noopener">Hugo</a>.
+      {{- with .OutputFormats.Get "RSS" }} <a href="{{ .RelPermalink }}">RSS</a>{{ end }}
+    </p>
+  </div>
+</footer>
