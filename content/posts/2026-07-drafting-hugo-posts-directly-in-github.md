@@ -61,9 +61,9 @@ Good candidates include:
 
 - Quote-to-Cash
 - Purchase-to-Pay
-- approval workflows
-- item replenishment and warehouse handling
-- case management or service follow-up
+- Approval Workflows
+- Item Replenishment and Warehouse Handling
+- Case Management or Service Follow-Up
 
 In those scenarios, Business Central already holds much of the operational history you care about. The hard part is shaping it into an event log with the right case ID, activity names, timestamps, and attributes. Once that structure exists, process mining can show you whether the process is smooth, fragmented, delayed, or full of avoidable touches.
 
