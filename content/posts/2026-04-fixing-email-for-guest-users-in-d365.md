@@ -4,6 +4,7 @@ date: 2026-04-26T20:41:00Z
 lastmod: 2026-06-07T10:05:00Z
 url: "/2026/04/fixing-email-for-guest-users-in-d365.html"
 hero: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD_tgKvPVaoeOc1509VK7bJu5oc_hFYoI-QF8G2etdokdMZAq4_JCGqSWiRoSLcJAwIvnT2NvZWqkS2I6cQr-cV9Y1UunPX8XlPPOaNqFe2wvMjKhcbRRpIvBETsz63aLoFx0fouVnYMQ6DXFyh_ua54BEEz-dW8ddb8RtmBKyTTHnvSTrXnCD/w640-h344/2026-04-26_21h39_24.png"
+tags: ["d365bc", "d365", "m365", "azure", "ai", "ssrs"]
 author: "Andy Wingate"
 ---
 <!--Blog Post: Fixing Email for Guest Users in Business Central - Open Source Extension-->
@@ -86,3 +87,4 @@ author: "Andy Wingate"
 <h2>What do you think?</h2>
 
 <p>Connect or follow me on LinkedIn to get all my updates <a href="https://www.linkedin.com/in/andywingate/" target="_blank">Andrew Wingate | LinkedIn</a></p>
+

@@ -3,6 +3,7 @@ title: "SSH Handy Shortcuts"
 date: 2014-02-01T00:30:00Z
 lastmod: 2014-03-15T00:30:42Z
 url: "/2014/03/ssh-handy-shortcuts.html"
+tags: ["networking"]
 author: "Andy Wingate"
 ---
 <b>File/Disk Browsing</b><br />
@@ -41,3 +42,4 @@ Reattach a single screen<br />
 <br />
 <br />
 <br />
+

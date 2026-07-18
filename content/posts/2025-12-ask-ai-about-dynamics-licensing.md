@@ -4,6 +4,7 @@ date: 2025-12-14T09:53:00Z
 lastmod: 2025-12-14T12:51:22Z
 url: "/2025/12/ask-ai-about-dynamics-licensing.html"
 hero: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeR3k84-nJidlVO7p8OMSCo8Ad4ITmVR5Ld9vYPob7b_3QknaytzJQOoINqfAv9TipcABP3fynfm8eGaC7i71RdWTIWTqug0XGooyjjWH3XwyMrwlRLT4McgAdQCcXA7d0eZJ3vApIqI_jb-QDF3JYDOeKSjevwf3ioxzhcDyp-Dm-b-8XRUgq/w400-h309/IMG_9824.jpeg"
+tags: ["d365bc", "d365", "power automate", "power platform", "m365", "azure"]
 author: "Andy Wingate"
 ---
 <h1>What's New in Dynamics 365 Licensing: December 2025 Update</h1>
@@ -170,3 +171,4 @@ author: "Andy Wingate"
     <li><a href="https://learn.microsoft.com/en-us/dynamics365/">Learn more about Dynamics 365 Agents</a></li>
     <li><a href="https://learn.microsoft.com/en-us/dynamics365/business-central/">Business Central documentation</a></li>
 </ul>
+

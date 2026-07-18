@@ -3,6 +3,7 @@ title: "SMTP test from telnet"
 date: 2013-06-22T14:23:00Z
 lastmod: 2013-06-22T14:24:59Z
 url: "/2013/06/smtp-test-from-telnet.html"
+tags: ["networking"]
 author: "Andy Wingate"
 ---
 Need to test out access to a mail server?<br />
@@ -27,3 +28,4 @@ Now you know if your server is working with those access details or not...
 <br />
 Thanks NDCHost<br />
 <a href="http://www.ndchost.com/wiki/mail/test-smtp-auth-telnet">http://www.ndchost.com/wiki/mail/test-smtp-auth-telnet</a>
+

@@ -3,6 +3,7 @@ title: "Fix vTiger \"SMTP Connect() failed\" Error"
 date: 2014-03-18T21:21:00Z
 lastmod: 2014-03-18T21:21:16Z
 url: "/2014/03/fix-vtiger-smtp-connect-failed-error.html"
+tags: ["networking"]
 author: "Andy Wingate"
 ---
 Just need to update a setting in vtigercrm/modules/Emails/class.phpmailer.php<br />
@@ -19,3 +20,4 @@ $this-&gt;Mailer = "sendmail";
 <br />
 Thanks <a href="https://discussions.vtiger.com/index.php?p=/discussion/169387/outgoing-email-imposible-to-get-it-working">Nathan79</a><br />
 <br />
+

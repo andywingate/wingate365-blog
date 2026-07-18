@@ -3,6 +3,7 @@ title: "New disk for existing VM"
 date: 2018-02-18T12:08:00Z
 lastmod: 2018-02-18T12:08:08Z
 url: "/2018/02/new-disk-for-existing-vm.html"
+tags: ["windows"]
 author: "Andy Wingate"
 ---
 <h3>
@@ -18,3 +19,4 @@ online disk</pre>
 The disk will now be available in Disk Management.<br />
 <br />
 <a href="http://jeffwouters.nl/index.php/2011/06/disk-offline-with-error-the-disk-is-offline-because-of-a-policy-set-by-an-administrator/" target="_blank">Source</a>
+

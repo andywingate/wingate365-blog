@@ -3,6 +3,7 @@ title: "TLS/SSL for Web Services"
 date: 2015-04-19T21:40:00Z
 lastmod: 2015-05-17T20:33:20Z
 url: "/2015/04/ssl-for-web-services.html"
+tags: ["d365bc", "exchange", "security", "simple dev", "talks"]
 author: "Andy Wingate"
 ---
 TLS protection should be a standard security policy these days. It's common place for servers hosting web pages and web services.<br />
@@ -81,3 +82,4 @@ To install the certificate may depend on how you requested it; as I requested mi
 My particular web services application (MS Dynamics NAV) had me assigning the relevant port using a tool that came with it and also referenced the Certificates thumbprint that you can find by double clicking on the certificate file and looking in the details tab. Other application may vary!<br />
 <br />
 One final note on SSL web services, the free to use <a href="https://code.google.com/p/webservicestudio2/" target="_blank">WebServiceStudio</a>&nbsp;v2&nbsp;does not appear to work over HTTPS, but <a href="http://sourceforge.net/projects/soapui/" target="_blank">SoapUI</a> does and it's also opensource, which is always nice.</div>
+

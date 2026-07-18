@@ -4,6 +4,7 @@ date: 2013-04-07T21:48:00Z
 lastmod: 2013-04-07T21:48:58Z
 url: "/2013/04/qnap-online-raid-5-migration.html"
 hero: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKs9nt9hkTNKQtBJuahGuqOWOW54_bgDZl6BPNplXfQhx7eEHlnE9lh2BpgneiCbYNgDl6Lg5dx53ubbdMDpvE7nYN6m7nJk0eU1JPq5e1t_sJwBuivRRn0KzuAXO1xOjU5yae/s1600/Capture1.JPG"
+tags: ["qnap", "simple dev"]
 author: "Andy Wingate"
 ---
 Recently added two new physical drives into a QNAP NAS (TS-419P II) and performed online migration of the&nbsp;existing&nbsp;single drive to a 3 drive RAID 5 setup, here is how I got on.<br />
@@ -26,3 +27,4 @@ After Java was stopped the progress updated to 50% and the screen displayed the 
 <br />
 <br />
 <br />
+

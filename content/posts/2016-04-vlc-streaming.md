@@ -3,6 +3,7 @@ title: "VLC Streaming"
 date: 2016-04-03T18:44:00Z
 lastmod: 2016-04-03T22:48:23Z
 url: "/2016/04/vlc-streaming.html"
+tags: ["ubuntu", "networking"]
 author: "Andy Wingate"
 ---
 Here is my setup to use VLC running on a laptop with a webcam as a simple CCTV system that can stream to your mobile.<br />
@@ -41,3 +42,4 @@ A bit more long winded but can also can be done via the VLC GUI :<br />
 </ul>
 <br />
 Simply test by opening another VLC window and trying to open the 'Network Stream' you just created e.g. http://localhost:8080/go.asf
+

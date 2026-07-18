@@ -3,6 +3,7 @@ title: "SSRS 2008 R2 Report parameters for MySQL datasources "
 date: 2014-04-08T07:41:00Z
 lastmod: 2014-04-08T07:41:59Z
 url: "/2014/04/ssrs-2008-r2-report-parameters-for.html"
+tags: ["ssrs", "simple dev"]
 author: "Andy Wingate"
 ---
 If you are using MySQL databases in SSRS you have to manually add the parameters.<br />
@@ -24,3 +25,4 @@ Define parameters in dataset properties<br />
 link parameter name "@start" with Parameter Value "@start" and same for @end<br />
 <br />
 <br />
+

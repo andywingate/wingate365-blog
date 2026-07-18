@@ -4,6 +4,7 @@ date: 2025-12-07T17:25:00Z
 lastmod: 2025-12-07T17:29:05Z
 url: "/2025/12/bc-community-2025-wrapped-blogs-videos.html"
 hero: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimh35zvAiwILyDOG9w8v3D1m06jcabwUUGPonsvGrntEr0GvzunBF_cRlz2U04M8uQFiVmLDa65k7b7l1S4uSF80O12IGLftugixL-H1khGlcglzvxc0mcnelHSlPPw6gXMYd6gUwyIjy_qdORV0_a5x5SRbVEVkS44D1QRyUSHSfMtvnQ3RWz/w640-h320/generated_image.png"
+tags: ["d365bc", "d365", "power bi", "power automate", "azure", "ai"]
 author: "Andy Wingate"
 ---
 <style>
@@ -284,3 +285,4 @@ author: "Andy Wingate"
 <p>Special thanks to the everyone&nbsp;that contributed to the BC community in 2024 from across the globe.</p>
 
 <p>Here's to an even more innovative year ahead! 🚀</p>
+

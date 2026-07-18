@@ -4,6 +4,7 @@ date: 2026-04-19T14:35:00Z
 lastmod: 2026-04-19T14:35:10Z
 url: "/2026/04/trying-out-github-copilot-agent-for.html"
 hero: "https://blogger.googleusercontent.com/img/a/AVvXsEiAvBXECUwSThy76HI6cnSmDj6stqPf0vDy-ErIeYnrnDIYL5sTCeLTdgBwAaJk1cSUC5WteUbQIYLqVCFLSIxnmD_R_vO6qiYB1PIJuurWp_3SNJu66rt4HPF9XkdvNEkXfezLcnIInA45X_TGAAFkDNxntuPyDkb75EmnFAM-UP9pjySkAQ14=w640-h378"
+tags: ["d365bc", "azure", "ai", "source control", "simple dev"]
 author: "Andy Wingate"
 ---
 <p></p>
@@ -30,3 +31,4 @@ author: "Andy Wingate"
 <h2>Try It Yourself</h2>
 <p>You need a GitHub repo and a GitHub Copilot licence. Create an issue with clear acceptance criteria, design your prompt carefully, assign Copilot from the Assignees section, and engage with the PR when it appears.</p>
 <p>The Nubimancy Knowledge repo is public - <a href="https://github.com/Nubimancy/Knowledge/pull/5">PR #5</a> shows exactly what the output looks like if you want to see it before trying on your own work.</p>
+

@@ -3,6 +3,7 @@ title: "Connect to Windows 2016 HyperV Core with delegated credentials  / CredSS
 date: 2018-02-18T12:24:00Z
 lastmod: 2018-02-18T12:24:14Z
 url: "/2018/02/connect-to-windows-2016-hyperv-core.html"
+tags: ["powershell", "security", "windows"]
 author: "Andy Wingate"
 ---
 CredSSP authentication is currently disabled on the local client. You must be running with administrator privileges in order to enable CredSSP<br />
@@ -23,3 +24,4 @@ Local Computer Policy &gt; Computer Configuration &gt; Administrative Templates 
 <li>Fire up Hyper-V Manager and connect to server only with IP-address and enter as user "[IP Address]\[username]” and set the password.</li>
 </br>
 <a href="https://social.technet.microsoft.com/Forums/en-US/8884b81e-0576-4764-a29d-ce7bec5c9ee9/hyperv-server-2016-tp4-howto-manage-hyperv-with-desktopos-hyperv-manager-and-bug?forum=WinServerPreview">Source</a>
+

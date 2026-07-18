@@ -3,6 +3,7 @@ title: "SVN / Subversion / Source Control "
 date: 2013-07-19T19:38:00Z
 lastmod: 2013-08-03T05:45:11Z
 url: "/2013/07/snv-subversion-source-control.html"
+tags: ["ssrs", "networking", "source control", "simple dev"]
 author: "Andy Wingate"
 ---
 Quick 'what I did' to setup Subversion this week to deal with SSRS projects and reports.<br />
@@ -22,3 +23,4 @@ Logging all the commits makes it very easy to roll back and check on what activi
 Next thing to try is the VisualSVN plugin for visual studio which requires TortoiseSVN to work. And read the rest of the manual as TortoiseSVN politely recommends...<br />
 <br />
 Edit: Now also added the Visual Studio plugin from VisualSVN, which is fantastic and very straight forward. Do all your commits, check the logs etc from within Visual Studio.
+

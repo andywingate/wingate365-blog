@@ -3,6 +3,7 @@ title: "Cloud Backup on QNAP NAS"
 date: 2013-03-28T16:26:00Z
 lastmod: 2013-03-28T16:27:55Z
 url: "/2013/03/cloud-backup-on-qnap-nas.html"
+tags: ["qnap", "backup"]
 author: "Andy Wingate"
 ---
 After finding Symform a bit too slow for my needs I decided to move to Amazon S3 to give them a go and also to try out some more simple scripting.<br />
@@ -40,3 +41,4 @@ scrip file; with your backup its important to know the system is working and you
 <br />
 <br /></div>
 </div>
+

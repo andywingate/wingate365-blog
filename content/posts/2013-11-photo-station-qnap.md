@@ -3,6 +3,7 @@ title: "Photo Station QNAP"
 date: 2013-11-10T11:06:00Z
 lastmod: 2014-05-06T22:28:29Z
 url: "/2013/11/photo-station-qnap.html"
+tags: ["qnap", "simple dev"]
 author: "Andy Wingate"
 ---
 If after trying the in-built photo web service for a bit you give up on it. Which is inevitable as its terribly slow, using normal home broadband in any case. It can be a pain to then remove all the thumbs clogging up your photo archive. But this can be done simply via SSH just move all the contents of the .@__thumb folders created to a single folder, check your not deleting anything you dont want to then wax the lot.<br />
@@ -28,3 +29,4 @@ This will clean up the directory structure and remove all the .@__thumb folders.
 <a href="http://forum.qnap.com/viewtopic.php?f=35&amp;t=37341">http://forum.qnap.com/viewtopic.php?f=35&amp;t=37341</a><br />
 <br />
 Update: Photo Station is now usable! It creates the thumbs much quicker and web access us totally usable. Sharing also works well.
+
