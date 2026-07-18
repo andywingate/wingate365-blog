@@ -923,4 +923,6 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
   .post-card.has-thumb { grid-template-columns: 1fr; gap: 0.75rem; }
   .post-card-thumb { max-width: 100%; }
   .sidebar { flex-direction: column; }
+  /* Reset the row-layout flex-basis, which becomes a min-height in a column */
+  .sidebar .widget, .sidebar .widget-mvp { flex: 0 0 auto; }
 }
