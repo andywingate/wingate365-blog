@@ -6,12 +6,12 @@
 <img class="thumb-img" src="{{ $hero | relURL }}" alt="{{ .Title }}" loading="lazy" decoding="async">
 {{- else -}}
   {{- $pairs := slice
-      (slice "#12212E" "#336687")
-      (slice "#24506B" "#4A96BF")
-      (slice "#336687" "#7882C7")
-      (slice "#3A3F7D" "#7882C7")
-      (slice "#2B5A78" "#6A8A7E")
-      (slice "#24506B" "#4A96BF") -}}
+      (slice "#0F1E2A" "#0B71C7")
+      (slice "#095CA3" "#37BEF3")
+      (slice "#3D6B8F" "#6FB0D4")
+      (slice "#0F1E2A" "#3D6B8F")
+      (slice "#0B71C7" "#37BEF3")
+      (slice "#095CA3" "#3D6B8F") -}}
   {{- $idx := mod (hash.FNV32a .Title) (len $pairs) -}}
   {{- $pair := index $pairs $idx -}}
   {{- $c1 := index $pair 0 -}}

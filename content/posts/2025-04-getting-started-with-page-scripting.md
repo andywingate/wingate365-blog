@@ -1,4 +1,4 @@
----
+﻿---
 title: "Getting Started with Page Scripting - Days of Knowledge UK - 2025"
 date: 2025-04-15T20:01:00Z
 lastmod: 2025-05-03T10:26:48Z
@@ -6,33 +6,12 @@ url: "/2025/04/getting-started-with-page-scripting.html"
 tags: ["d365bc", "talks", "community"]
 hero: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzvhDmCrHmTFcCjT1H3NB8kDw-ZXt_KKX5Zgni9uqTHf9iwxcymV5pObWEDDjNWJbrgatREXOzCgnLhNNn8P0JZHpkLUzm3J-HrkXJ1cSFhhKWnq5EJA8IzD6lOat9TocAt3L1wt6qcb_biyUkh3oz8xjLNBrV22OQw8a22pxEH09jDnUDuH8w/w640-h350/2025-04-15_21h02_10.png"
 author: "Andy Wingate"
+linkedin: "https://www.linkedin.com/posts/andywingate_show-me-the-money-or-check-who-approved-activity-7060613064663932929--sE8"
 ---
-<div><br /></div>I was very pleased to speak at the Days of Knowledge UK conference in recently. Here is a copy of the session details and slides for download.<p><a href="https://sessionize.com/s/andywingate/getting-started-with-page-scripting/135594">Getting Started with Page Scripting - Andrew Wingate's Speaker Profile @ Sessionize</a></p><p>Page Scripting is a powerful recent feature in Dynamics 365 Business Central. It has the potential to enhance productivity for consultants and end users for data entry, testing and some automation capabilities.&nbsp;</p><p>This session aims to shine a light on the Page Scripting tool and demonstrate some practical use cases that might inspire attendees to adopt it in their day-to-day work.</p><h3 style="text-align: left;">What will be covered</h3><p></p><ul style="text-align: left;"><li>What Page Scripting is and how it works in Business Central</li><li>Real-world scenarios: when and why to use Page Scripting</li><li>Demo: Creating, managing, and running scripts</li><li>Tips for using Page Scripting in testing, data entry, and troubleshooting</li><li>How to make scripting part of your Business Central toolkit</li></ul><p></p><h3 style="text-align: left;">What can the audience expect to leave with?</h3><p>Attendees will leave with a clear understanding of how Page Scripting works, where it fits into the Business Central ecosystem, and how to confidently start using it to solve real business problems.&nbsp;</p><p>Whether you're a developer, consultant, or power user, you’ll gain practical knowledge you can apply right away.&nbsp;&nbsp;</p><p>Here are the slides as&nbsp;<a href="https://1drv.ms/b/s!AsbnQ0c9v-xzr4gmhO6Yue9gExUwJQ?e=f89Y5z" target="_blank">PDF</a>&nbsp;or <a href="https://1drv.ms/p/s!AsbnQ0c9v-xzr4gkk8bykLhjykITtA?e=g2XQhC" target="_blank">PPTX</a>&nbsp;format.</p>
+<div><br /></div>I was very pleased to speak at the Days of Knowledge UK conference in recently. Here is a copy of the session details and slides for download.<p><a href="https://sessionize.com/s/andywingate/getting-started-with-page-scripting/135594">Getting Started with Page Scripting - Andrew Wingate's Speaker Profile @ Sessionize</a></p><p>Page Scripting is a powerful recent feature in Dynamics 365 Business Central. It has the potential to enhance productivity for consultants and end users for data entry, testing and some automation capabilities.&nbsp;</p><p>This session aims to shine a light on the Page Scripting tool and demonstrate some practical use cases that might inspire attendees to adopt it in their day-to-day work.</p><h3 style="text-align: left;">What will be covered</h3><p></p><ul style="text-align: left;"><li>What Page Scripting is and how it works in Business Central</li><li>Real-world scenarios: when and why to use Page Scripting</li><li>Demo: Creating, managing, and running scripts</li><li>Tips for using Page Scripting in testing, data entry, and troubleshooting</li><li>How to make scripting part of your Business Central toolkit</li></ul><p></p><h3 style="text-align: left;">What can the audience expect to leave with?</h3><p>Attendees will leave with a clear understanding of how Page Scripting works, where it fits into the Business Central ecosystem, and how to confidently start using it to solve real business problems.&nbsp;</p><p>Whether you're a developer, consultant, or power user, youâ€™ll gain practical knowledge you can apply right away.&nbsp;&nbsp;</p><p>Here are the slides as&nbsp;<a href="https://1drv.ms/b/s!AsbnQ0c9v-xzr4gmhO6Yue9gExUwJQ?e=f89Y5z" target="_blank">PDF</a>&nbsp;or <a href="https://1drv.ms/p/s!AsbnQ0c9v-xzr4gkk8bykLhjykITtA?e=g2XQhC" target="_blank">PPTX</a>&nbsp;format.</p>
 <h3 style="text-align: left;">bc-replay Notes</h3>
 This PowerShell scrip runs all the BC page scrips saved in the 'C:\bc-replay\rec' folder, against a local docker BC container at http://bcinsider26/BC/?tenant=default<br />
 <script src="https://gist.github.com/andywingate/94bcff659a1e89eaf9531e68db6c2bc1.js"></script>
 
 This PowerShell scrip runs all the BC page scrips saved in the 'C:\bc-replay\rec' folder, against the SaaS BC environment https://businesscentral.dynamics.com/'your tenant ID goes here'/Sandbox.&nbsp;<div><ul style="text-align: left;"><li>The MS Entra account "bc-replay@your-domain.com" needs to have the approproate access to the Sandbox and Page Scrip running permissions &amp; MFA (and self service password reset) disabled - or else it wont work!&nbsp;</li></ul>
 <script src="https://gist.github.com/andywingate/2299ee6bae561ffcc4bbdc2001a9ac7a.js"></script>
-  
-<h2>What do you think?</h2>
-<p>Please let me know your thoughts in the <a href="https://www.linkedin.com/posts/andywingate_show-me-the-money-or-check-who-approved-activity-7060613064663932929--sE8?utm_source=share&amp;utm_medium=member_desktop" target="_blank">comments</a><br /></p>
-<p>Connect or follow me on LinkedIn to get all my updates&nbsp;<a href="https://www.linkedin.com/in/andywingate/" target="_blank">Andrew Wingate | LinkedIn</a></p>
-<style>
-    .libutton {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 7px;
-      text-align: center;
-      outline: none;
-      text-decoration: none !important;
-      color: #ffffff !important;
-      width: 200px;
-      height: 32px;
-      border-radius: 16px;
-      background-color: #0A66C2;
-      font-family: "SF Pro Text", Helvetica, sans-serif;
-    }
-  </style>
-  <a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&amp;followMember=andywingate" target="_blank">Click to Follow</a><br /><br /></div>

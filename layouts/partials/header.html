@@ -6,7 +6,7 @@
     </a>
     <nav class="site-nav" aria-label="Primary">
       {{- range .Site.Menus.main }}
-      <a href="{{ .PageRef | relURL }}"{{ if $.IsMenuCurrent "main" . }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
+      <a href="{{ (or .PageRef .URL) | relURL }}"{{ if $.IsMenuCurrent "main" . }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
       {{- end }}
       {{ partial "search.html" . }}
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">

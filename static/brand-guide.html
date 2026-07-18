@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wingate365 Brand Bible</title>
+<title>Wingate365 Brand Guide</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap">
@@ -14,11 +14,14 @@
     --steel:          #3D6B8F;
     --sky:            #6FB0D4;
     --mist-blue:      #8CC7E3;
-    /* Signature */
-    --copper:         #B87333;
-    --copper-deep:    #9A5E27;
-    /* Extended */
+    /* Signature - BC Azure */
+    --azure:          #0B71C7;
+    --azure-deep:     #095CA3;
+    --cyan:           #37BEF3;
+    --ice:            #94EFFF;
+    /* Secondary / semantic */
     --forest:         #2E7D5A;
+    --amber:          #C77D1A;
     --burgundy:       #8B2E52;
     --slate:          #5B5EA6;
     --sage:           #6A8A7E;
@@ -28,9 +31,9 @@
     --cloud:          #E2E8EE;
     --body:           #1A2530;
     --muted:          #5A6B78;
-    --gradient-primary: linear-gradient(135deg, #0F1E2A 0%, #3D6B8F 100%);
-    --gradient-cool:    linear-gradient(135deg, #3D6B8F 0%, #6FB0D4 100%);
-    --gradient-signature: linear-gradient(90deg, #3D6B8F, #B87333);
+    --gradient-primary: linear-gradient(135deg, #0F1E2A 0%, #0B71C7 55%, #37BEF3 100%);
+    --gradient-cool:    linear-gradient(135deg, #0B71C7 0%, #37BEF3 100%);
+    --gradient-signature: linear-gradient(90deg, #0B71C7, #37BEF3);
   }
 
   * , *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -87,7 +90,7 @@
     font-size: 3.4rem; font-weight: 800; letter-spacing: -0.03em;
     line-height: 1.02; margin-bottom: 18px;
   }
-  .hero h1 .yr { color: var(--copper); }
+  .hero h1 .yr { color: #37BEF3; }
   .hero p.lead { font-size: 1.25rem; color: var(--mist-blue); max-width: 620px; line-height: 1.5; }
   .hero .stamp {
     margin-top: 28px; display:inline-flex; align-items:center; gap:10px;
@@ -101,7 +104,7 @@
     background: var(--paper); border: 1px solid var(--cloud); border-radius: 12px;
     padding: 20px; border-top: 3px solid var(--steel);
   }
-  .trait:nth-child(2){ border-top-color: var(--copper); }
+  .trait:nth-child(2){ border-top-color: var(--azure); }
   .trait:nth-child(3){ border-top-color: var(--forest); }
   .trait:nth-child(4){ border-top-color: var(--slate); }
   .trait:nth-child(5){ border-top-color: var(--burgundy); }
@@ -120,7 +123,40 @@
   .diverge .col p { font-size: 0.84rem; color: var(--muted); }
   .diverge .col .tag { font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; padding: 3px 9px; border-radius:4px; display:inline-block; margin-bottom:10px; }
   .tag-old { background:#eceff2; color:#77828c; }
-  .tag-new { background: rgba(184,115,51,0.14); color: var(--copper-deep); }
+  .tag-new { background: rgba(43,124,211,0.14); color:#0B5CA3; }
+
+  /* Signature options -------------------------------------------------- */
+  .opt-stack { display:flex; flex-direction:column; gap: 26px; }
+  .opt {
+    background: var(--paper); border:1px solid var(--cloud); border-radius:18px; overflow:hidden;
+    box-shadow: 0 3px 18px rgba(15,30,42,0.08);
+  }
+  .opt-hero { height: 168px; position:relative; display:flex; align-items:flex-end; padding: 18px 24px; overflow:hidden; }
+  .opt-hero .mono { position:absolute; top:-26px; right:18px; font-size:9rem; font-weight:800; color:rgba(255,255,255,0.14); line-height:1; }
+  .opt-hero .badge { width:38px; height:38px; border-radius:50%; background:rgba(255,255,255,0.92); color:#0F1E2A; font-weight:800; font-size:1.1rem; display:flex; align-items:center; justify-content:center; margin-right:14px; flex-shrink:0; box-shadow:0 2px 8px rgba(0,0,0,0.2); }
+  .opt-hero .htxt { position:relative; z-index:1; display:flex; align-items:center; }
+  .opt-hero h3 { font-size:1.5rem; font-weight:800; letter-spacing:-0.02em; color:#fff; line-height:1.05; }
+  .opt-hero .sub { font-size:0.82rem; color:rgba(255,255,255,0.88); margin-top:2px; }
+  .opt-body { padding: 22px 24px 26px; display:grid; grid-template-columns: 1fr 300px; gap: 26px; }
+  .opt-rationale { font-size:0.9rem; color:var(--muted); line-height:1.6; margin-bottom:16px; }
+  .opt-rationale strong { color:var(--ink); }
+  .opt-insp { font-size:0.72rem; color:var(--steel); font-weight:700; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:14px; display:inline-block; }
+  .opt-sw { display:flex; gap:10px; flex-wrap:wrap; }
+  .opt-sw .s { border-radius:10px; overflow:hidden; border:1px solid var(--cloud); width:96px; }
+  .opt-sw .s .b { height:52px; }
+  .opt-sw .s .t { padding:6px 8px; }
+  .opt-sw .s .t strong { font-size:0.72rem; color:var(--ink); display:block; }
+  .opt-sw .s .t code { font-size:0.62rem; color:var(--muted); }
+  .opt-preview { border-left:1px solid var(--cloud); padding-left:24px; display:flex; flex-direction:column; gap:14px; }
+  .opt-preview .plabel { font-size:0.66rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); }
+  .opt-preview .pcard { border:1px solid var(--cloud); border-radius:12px; overflow:hidden; box-shadow:0 2px 8px rgba(15,30,42,0.06); }
+  .opt-preview .pcard .pimg { height:64px; }
+  .opt-preview .pcard .pbody { padding:10px 12px; }
+  .opt-preview .pcard .pbody h5 { font-size:0.86rem; color:var(--ink); margin-bottom:2px; }
+  .opt-preview .pcard .pbody p { font-size:0.72rem; color:var(--muted); }
+  .opt-btn { font:inherit; font-weight:700; font-size:0.86rem; color:#fff; border:none; border-radius:6px; padding:10px 18px; cursor:pointer; align-self:flex-start; }
+  .opt-link a { font-weight:600; text-decoration:none; border-bottom:2px solid transparent; }
+  .opt-link { font-size:0.9rem; color:var(--body); }
 
   /* Swatches ----------------------------------------------------------- */
   .swatch-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(180px,1fr)); gap: 16px; }
@@ -174,12 +210,12 @@
   .comp-card { background: var(--paper); border:1px solid var(--cloud); border-radius: 14px; padding: 24px 26px; }
   .comp-card > .label { font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); margin-bottom: 16px; }
   .btn { font: inherit; font-weight:700; font-size:0.9rem; border:none; border-radius:6px; padding: 11px 22px; cursor:pointer; }
-  .btn-cta { background: var(--copper); color:#fff; }
-  .btn-cta:hover { background: var(--copper-deep); }
+  .btn-cta { background: var(--azure); color:#fff; }
+  .btn-cta:hover { background: var(--azure-deep); }
   .btn-ghost { background: transparent; color: var(--steel); border:1px solid var(--steel); }
   .btn-ghost:hover { background: var(--steel); color:#fff; }
   .link-demo a { color: var(--steel); font-weight:600; text-decoration: none; border-bottom: 2px solid transparent; }
-  .link-demo a:hover { border-bottom-color: var(--copper); }
+  .link-demo a:hover { border-bottom-color: var(--cyan); }
   .card-demo { border:1px solid var(--cloud); border-radius:12px; overflow:hidden; box-shadow:0 2px 10px rgba(15,30,42,0.06); }
   .card-demo .cimg { height: 90px; background: var(--gradient-cool); }
   .card-demo .cbody { padding: 14px 16px; }
@@ -190,7 +226,7 @@
   .callout strong { color: var(--ink); }
   .co-tip { border-color: var(--forest); }
   .co-note { border-color: var(--slate); }
-  .co-heads { border-color: var(--copper); }
+  .co-heads { border-color: var(--amber); }
   .co-warn { border-color: var(--burgundy); }
 
   /* Voice -------------------------------------------------------------- */
@@ -237,16 +273,16 @@
     <div class="hero-dots">
       <span style="background:#0F1E2A"></span>
       <span style="background:#3D6B8F"></span>
-      <span style="background:#6FB0D4"></span>
-      <span style="background:#B87333"></span>
-      <span style="background:#2E7D5A"></span>
-      <span style="background:#8B2E52"></span>
-      <span style="background:#5B5EA6"></span>
-      <span style="background:#6A8A7E"></span>
+      <span style="background:#0B71C7"></span>
+      <span style="background:#37BEF3"></span>
+      <span style="background:#3B6FE0"></span>
+      <span style="background:#7A5AE0"></span>
+      <span style="background:#1596BE"></span>
+      <span style="background:#94EFFF"></span>
     </div>
-    <h1>Wingate<span class="yr">365</span> Brand Bible</h1>
+    <h1>Wingate<span class="yr">365</span> Brand Guide</h1>
     <p class="lead">Colour, typography, voice, and article conventions for the blog - a practical field notebook by a Microsoft MVP for Business Central.</p>
-    <div class="stamp">Figtree &nbsp;&middot;&nbsp; Steel Blue &amp; Copper &nbsp;&middot;&nbsp; v1.0</div>
+    <div class="stamp">Figtree &nbsp;&middot;&nbsp; Deep Ink &amp; BC Azure &nbsp;&middot;&nbsp; v1.0</div>
   </div>
 </header>
 
@@ -259,7 +295,7 @@
     <div class="trait-grid">
       <div class="trait"><h4>Practitioner, not marketer</h4><p>First person, hands-on. "Here is what I did and why." No sales language.</p></div>
       <div class="trait"><h4>Clear over clever</h4><p>Short sentences, plain UK English. Explain the fix, then the context.</p></div>
-      <div class="trait"><h4>Warm and human</h4><p>The Copper accent is the visual signal of this - the spark that sets us apart from a cold corporate deck.</p></div>
+      <div class="trait"><h4>Rooted in Business Central</h4><p>The BC Azure signature is the visual signal - it roots the blog in the Business Central world at a glance, without cloning the product UI.</p></div>
       <div class="trait"><h4>Authoritative, generous</h4><p>Confident because the experience is real, but always sharing, never gatekeeping.</p></div>
       <div class="trait"><h4>Technical, current</h4><p>Business Central, Dynamics 365, Microsoft cloud - and the odd homelab or brewing detour.</p></div>
     </div>
@@ -269,26 +305,140 @@
 <!-- DIVERGENCE ---------------------------------------------------------- -->
 <section>
   <div class="wrap">
-    <span class="eyebrow">02 &middot; The divergence</span>
-    <h2 class="sec-title">Not Venture</h2>
-    <p class="sec-intro">The blog once borrowed the Venture blues. Wingate365 is a personal brand and must read as its own thing. Two deliberate moves make the break: a warmer, deeper foundation, and a signature warm accent that Venture never uses.</p>
+    <span class="eyebrow">02 &middot; Lineage</span>
+    <h2 class="sec-title">Inspired by Venture</h2>
+    <p class="sec-intro">Wingate365 takes its cue from the Venture blues but stands on its own. The same cool, considered starting point, then two deliberate moves give it a distinct identity: a deeper, more focused foundation, and a vivid Business Central azure signature that Venture never uses.</p>
     <div class="diverge">
       <div class="col">
         <div class="band"><div style="background:#12212E"></div><div style="background:#336687"></div></div>
         <div class="txt">
-          <span class="tag tag-old">Legacy &middot; Venture</span>
+          <span class="tag tag-old">Inspiration &middot; Venture</span>
           <h4>All-cool blue</h4>
-          <p>Dark Blue #12212E and Mid Blue #336687. Corporate, consistent - but shared with the Venture identity.</p>
+          <p>Dark Blue #12212E and Mid Blue #336687. The cool, professional starting point Wingate365 grew from.</p>
         </div>
       </div>
       <div class="col">
-        <div class="band"><div style="background:#0F1E2A"></div><div style="background:#3D6B8F"></div><div style="background:#B87333"></div></div>
+        <div class="band"><div style="background:#0F1E2A"></div><div style="background:#3D6B8F"></div><div style="background:#0B71C7"></div><div style="background:#37BEF3"></div></div>
         <div class="txt">
           <span class="tag tag-new">Wingate365</span>
-          <h4>Steel &amp; Copper</h4>
-          <p>Deeper Ink #0F1E2A, Steel Blue #3D6B8F as primary, and a warm Copper #B87333 signature. The one warm tone is the instant "this is Wingate365" cue.</p>
+          <h4>Steel &amp; Azure</h4>
+          <p>Deep Ink #0F1E2A and Steel Blue #3D6B8F for structure, with a vivid Business Central azure #0B71C7 signature brightening to cyan #37BEF3. Cool, confident, and unmistakably in the BC family.</p>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIGNATURE OPTIONS --------------------------------------------------- -->
+<section style="background:var(--paper);">
+  <div class="wrap">
+    <span class="eyebrow">03 &middot; Signature &middot; locked in</span>
+    <h2 class="sec-title">The signature - BC Azure</h2>
+    <p class="sec-intro"><strong>Selected: Option A, BC Azure.</strong> The signature is the Business Central azure <strong>#0B71C7</strong>, brightening to cyan <strong>#37BEF3</strong>, over the Deep Ink and Steel Blue foundation. The three options considered are kept below for the record - A is the chosen direction and the rest of this bible now uses it.</p>
+
+    <div class="opt-stack">
+
+      <!-- OPTION A - SELECTED -->
+      <div class="opt" style="border:2px solid #2E7D5A; box-shadow:0 6px 22px rgba(46,125,90,0.18);">
+        <div class="opt-hero" style="background:linear-gradient(135deg,#0F1E2A 0%,#0B71C7 55%,#37BEF3 100%);">
+          <span class="mono">A</span>
+          <span style="position:absolute; top:14px; right:16px; z-index:2; background:#2E7D5A; color:#fff; font-size:0.66rem; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; padding:5px 12px; border-radius:999px;">&#10003; Selected</span>
+          <div class="htxt">
+            <span class="badge">A</span>
+            <div><h3>BC Azure</h3><div class="sub">Authentic, product-true, confident</div></div>
+          </div>
+        </div>
+        <div class="opt-body">
+          <div>
+            <span class="opt-insp">Inspired by &middot; the Business Central cube</span>
+            <p class="opt-rationale">The signature is the <strong>exact Business Central azure #0B71C7</strong>, brightening to BC cyan for highlights. Anyone in the ecosystem reads it instantly as "Business Central" without being a clone of the product UI. Steel Blue stays for structure, so the azure only appears where it counts. The gradient runs Deep Ink into azure into cyan - the cool half of the Copilot flow.</p>
+            <div class="opt-sw">
+              <div class="s"><div class="b" style="background:#0B71C7"></div><div class="t"><strong>BC Azure</strong><code>#0B71C7</code></div></div>
+              <div class="s"><div class="b" style="background:#095CA3"></div><div class="t"><strong>Azure Deep</strong><code>#095CA3</code></div></div>
+              <div class="s"><div class="b" style="background:#37BEF3"></div><div class="t"><strong>BC Cyan</strong><code>#37BEF3</code></div></div>
+              <div class="s"><div class="b" style="background:#94EFFF"></div><div class="t"><strong>Ice</strong><code>#94EFFF</code></div></div>
+            </div>
+          </div>
+          <div class="opt-preview">
+            <span class="plabel">In use</span>
+            <button class="opt-btn" style="background:#0B71C7">Read the post &rarr;</button>
+            <p class="opt-link">A <a href="#" style="color:#0B71C7;border-bottom-color:#37BEF3;">link in running text</a> reads clean.</p>
+            <div class="pcard">
+              <div class="pimg" style="background:linear-gradient(135deg,#0F1E2A,#0B71C7,#37BEF3)"></div>
+              <div class="pbody"><h5>Filtering for the current user</h5><p>Business Central &middot; 4 min read</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OPTION B -->
+      <div class="opt">
+        <div class="opt-hero" style="background:linear-gradient(120deg,#2CC5D2 0%,#3B7DE0 34%,#7A5AE0 68%,#E255A1 100%);">
+          <span class="mono">B</span>
+          <div class="htxt">
+            <span class="badge">B</span>
+            <div><h3>Copilot Flow</h3><div class="sub">Modern, AI-forward, energetic</div></div>
+          </div>
+        </div>
+        <div class="opt-body">
+          <div>
+            <span class="opt-insp">Inspired by &middot; the Copilot spectrum</span>
+            <p class="opt-rationale">The hero leans into the full <strong>Copilot ribbon</strong> - teal, blue, violet, pink - used only on hero bands and never behind text. The working signature is a single bright <strong>azure #3B6FE0</strong> pulled from the middle of that flow, so day-to-day UI stays disciplined while the brand feels distinctly AI-era. Fits a blog that writes about Copilot in Business Central.</p>
+            <div class="opt-sw">
+              <div class="s"><div class="b" style="background:#3B6FE0"></div><div class="t"><strong>Azure</strong><code>#3B6FE0</code></div></div>
+              <div class="s"><div class="b" style="background:#2CC5D2"></div><div class="t"><strong>Teal</strong><code>#2CC5D2</code></div></div>
+              <div class="s"><div class="b" style="background:#7A5AE0"></div><div class="t"><strong>Violet</strong><code>#7A5AE0</code></div></div>
+              <div class="s"><div class="b" style="background:#E255A1"></div><div class="t"><strong>Pink</strong><code>#E255A1</code></div></div>
+            </div>
+          </div>
+          <div class="opt-preview">
+            <span class="plabel">In use</span>
+            <button class="opt-btn" style="background:#3B6FE0">Read the post &rarr;</button>
+            <p class="opt-link">A <a href="#" style="color:#3B6FE0;border-bottom-color:#7A5AE0;">link in running text</a> with a violet lift.</p>
+            <div class="pcard">
+              <div class="pimg" style="background:linear-gradient(120deg,#2CC5D2,#3B7DE0,#7A5AE0,#E255A1)"></div>
+              <div class="pbody"><h5>Getting started with Copilot in BC</h5><p>Copilot &middot; 6 min read</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OPTION C -->
+      <div class="opt">
+        <div class="opt-hero" style="background:linear-gradient(130deg,#0F1E2A 0%,#157FA8 42%,#37BEF3 82%,#6FB6E8 100%);">
+          <span class="mono">C</span>
+          <div class="htxt">
+            <span class="badge">C</span>
+            <div><h3>Deep Cyan</h3><div class="sub">Fresh, technical, distinctive</div></div>
+          </div>
+        </div>
+        <div class="opt-body">
+          <div>
+            <span class="opt-insp">Inspired by &middot; the bright facet of the BC cube</span>
+            <p class="opt-rationale">Takes the <strong>cyan facet</strong> of the Business Central logo and deepens it to a usable <strong>#1596BE</strong> - cyan-forward and clearly separated from every default corporate navy, including Venture. It still lives in the BC family but owns a fresher, more technical feel. The gradient is Deep Ink to teal to cyan, the coolest read of the Copilot flow.</p>
+            <div class="opt-sw">
+              <div class="s"><div class="b" style="background:#1596BE"></div><div class="t"><strong>Deep Cyan</strong><code>#1596BE</code></div></div>
+              <div class="s"><div class="b" style="background:#0E7A9C"></div><div class="t"><strong>Cyan Deep</strong><code>#0E7A9C</code></div></div>
+              <div class="s"><div class="b" style="background:#37BEF3"></div><div class="t"><strong>BC Cyan</strong><code>#37BEF3</code></div></div>
+              <div class="s"><div class="b" style="background:#94EFFF"></div><div class="t"><strong>Ice</strong><code>#94EFFF</code></div></div>
+            </div>
+          </div>
+          <div class="opt-preview">
+            <span class="plabel">In use</span>
+            <button class="opt-btn" style="background:#1596BE">Read the post &rarr;</button>
+            <p class="opt-link">A <a href="#" style="color:#0E7A9C;border-bottom-color:#37BEF3;">link in running text</a> stays legible.</p>
+            <div class="pcard">
+              <div class="pimg" style="background:linear-gradient(130deg,#0F1E2A,#157FA8,#37BEF3)"></div>
+              <div class="pbody"><h5>Filtering for the current user</h5><p>Business Central &middot; 4 min read</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:26px; background:var(--mist); border-left:4px solid #2E7D5A; border-radius:8px; padding:14px 20px;">
+      <p style="font-size:0.9rem; color:var(--ink); line-height:1.55;"><strong>Decision:</strong> BC Azure (Option A) is locked in as the signature and now drives the palette, gradients, hero placeholders, and components throughout this bible. The copper is retired. Next up: the secondary colours below.</p>
     </div>
   </div>
 </section>
@@ -296,9 +446,9 @@
 <!-- PALETTE ------------------------------------------------------------- -->
 <section>
   <div class="wrap">
-    <span class="eyebrow">03 &middot; Colour</span>
-    <h2 class="sec-title">The palette</h2>
-    <p class="sec-intro">A cool, authoritative foundation, one warm signature accent, and an extended semantic set drawn from the Precision colours for callouts, tags, and data.</p>
+    <span class="eyebrow">04 &middot; Colour</span>
+    <h2 class="sec-title">The full palette</h2>
+    <p class="sec-intro">A cool, authoritative foundation, the BC Azure signature, and a secondary set that blends Business Central logo tones with harmonised Precision colours for callouts, tags, and data.</p>
 
     <h3 class="sub">Foundation</h3>
     <div class="swatch-grid">
@@ -308,18 +458,44 @@
       <div class="swatch"><div class="block" style="background:#8CC7E3"><span class="hex" style="color:rgba(0,0,0,0.45)">#8CC7E3</span></div><div class="info"><strong>Mist Blue</strong><code>--mist-blue</code><span class="role">Subtle fills, quiet badges, text on dark panels.</span></div></div>
     </div>
 
-    <h3 class="sub">Signature accent - use sparingly</h3>
+    <h3 class="sub">Signature - BC Azure</h3>
     <div class="swatch-grid">
-      <div class="swatch"><div class="block" style="background:#B87333"><span class="hex" style="color:rgba(255,255,255,0.8)">#B87333</span></div><div class="info"><strong>Copper</strong><code>--copper</code><span class="role">Signature accent. CTAs, "read more", emphasis underlines.</span></div></div>
-      <div class="swatch"><div class="block" style="background:#9A5E27"><span class="hex" style="color:rgba(255,255,255,0.8)">#9A5E27</span></div><div class="info"><strong>Copper Deep</strong><code>--copper-deep</code><span class="role">Hover and pressed state for Copper elements.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#0B71C7"><span class="hex" style="color:rgba(255,255,255,0.8)">#0B71C7</span></div><div class="info"><strong>BC Azure</strong><code>--azure</code><span class="role">Signature. CTAs, "read more", primary buttons, key emphasis.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#095CA3"><span class="hex" style="color:rgba(255,255,255,0.8)">#095CA3</span></div><div class="info"><strong>Azure Deep</strong><code>--azure-deep</code><span class="role">Hover and pressed state for azure elements.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#37BEF3"><span class="hex" style="color:rgba(0,0,0,0.5)">#37BEF3</span></div><div class="info"><strong>BC Cyan</strong><code>--cyan</code><span class="role">Bright accent. Link underlines, highlights, gradient end.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#94EFFF"><span class="hex" style="color:rgba(0,0,0,0.45)">#94EFFF</span></div><div class="info"><strong>Ice</strong><code>--ice</code><span class="role">Light fills, quiet badges, tints on dark panels.</span></div></div>
     </div>
 
-    <h3 class="sub">Extended &amp; semantic (Precision set)</h3>
+    <h3 class="sub">Secondary &amp; semantic</h3>
+    <p class="sec-intro" style="margin:-8px 0 18px; font-size:0.9rem;">BC-family blues extend the signature; the Precision-derived accents carry meaning in callouts, tags, and charts. All are tuned to sit happily beside the azure.</p>
     <div class="swatch-grid">
-      <div class="swatch"><div class="block" style="background:#2E7D5A"><span class="hex" style="color:rgba(255,255,255,0.8)">#2E7D5A</span></div><div class="info"><strong>Forest</strong><span class="role">Success, tips, what worked, RAG green.</span></div></div>
-      <div class="swatch"><div class="block" style="background:#8B2E52"><span class="hex" style="color:rgba(255,255,255,0.8)">#8B2E52</span></div><div class="info"><strong>Burgundy</strong><span class="role">Warnings, gotchas, breaking changes, RAG red.</span></div></div>
-      <div class="swatch"><div class="block" style="background:#5B5EA6"><span class="hex" style="color:rgba(255,255,255,0.85)">#5B5EA6</span></div><div class="info"><strong>Slate</strong><span class="role">Info, notes, side commentary, secondary accent.</span></div></div>
-      <div class="swatch"><div class="block" style="background:#6A8A7E"><span class="hex" style="color:rgba(255,255,255,0.8)">#6A8A7E</span></div><div class="info"><strong>Sage</strong><span class="role">Muted, quiet callouts, secondary data.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#6FB0D4"><span class="hex" style="color:rgba(0,0,0,0.5)">#6FB0D4</span></div><div class="info"><strong>Sky</strong><code>--sky</code><span class="role">Soft supporting blue. Dark-mode links, quiet accents.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#2E7D5A"><span class="hex" style="color:rgba(255,255,255,0.8)">#2E7D5A</span></div><div class="info"><strong>Forest</strong><code>--forest</code><span class="role">Success, tips, what worked, RAG green.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#C77D1A"><span class="hex" style="color:rgba(255,255,255,0.85)">#C77D1A</span></div><div class="info"><strong>Amber</strong><code>--amber</code><span class="role">Caution, heads-up, at-risk, RAG amber.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#5B5EA6"><span class="hex" style="color:rgba(255,255,255,0.85)">#5B5EA6</span></div><div class="info"><strong>Slate</strong><code>--slate</code><span class="role">Info, notes, side commentary. Bridges to Copilot violet.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#8B2E52"><span class="hex" style="color:rgba(255,255,255,0.8)">#8B2E52</span></div><div class="info"><strong>Burgundy</strong><code>--burgundy</code><span class="role">Warnings, breaking changes, RAG red.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#6A8A7E"><span class="hex" style="color:rgba(255,255,255,0.8)">#6A8A7E</span></div><div class="info"><strong>Sage</strong><code>--sage</code><span class="role">Muted, quiet callouts, secondary data.</span></div></div>
+    </div>
+
+    <h3 class="sub">The family in data</h3>
+    <p class="sec-intro" style="margin:-8px 0 16px; font-size:0.9rem;">Six distinct series that still read as one family - BC Azure and Cyan lead, the Precision accents fill in.</p>
+    <div style="background:var(--paper); border:1px solid var(--cloud); border-radius:12px; padding:22px 24px; box-shadow:0 2px 8px rgba(15,30,42,0.06);">
+      <div style="display:flex; align-items:flex-end; gap:12px; height:150px; padding-bottom:20px; border-bottom:1px solid var(--cloud);">
+        <div style="flex:1; background:#0B71C7; height:132px; border-radius:5px 5px 0 0;"></div>
+        <div style="flex:1; background:#37BEF3; height:98px; border-radius:5px 5px 0 0;"></div>
+        <div style="flex:1; background:#2E7D5A; height:114px; border-radius:5px 5px 0 0;"></div>
+        <div style="flex:1; background:#C77D1A; height:80px; border-radius:5px 5px 0 0;"></div>
+        <div style="flex:1; background:#5B5EA6; height:106px; border-radius:5px 5px 0 0;"></div>
+        <div style="flex:1; background:#8B2E52; height:68px; border-radius:5px 5px 0 0;"></div>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:16px; margin-top:14px;">
+        <span style="display:flex; align-items:center; gap:7px; font-size:0.74rem; color:var(--muted);"><span style="width:11px;height:11px;border-radius:3px;background:#0B71C7;"></span>BC Azure</span>
+        <span style="display:flex; align-items:center; gap:7px; font-size:0.74rem; color:var(--muted);"><span style="width:11px;height:11px;border-radius:3px;background:#37BEF3;"></span>BC Cyan</span>
+        <span style="display:flex; align-items:center; gap:7px; font-size:0.74rem; color:var(--muted);"><span style="width:11px;height:11px;border-radius:3px;background:#2E7D5A;"></span>Forest</span>
+        <span style="display:flex; align-items:center; gap:7px; font-size:0.74rem; color:var(--muted);"><span style="width:11px;height:11px;border-radius:3px;background:#C77D1A;"></span>Amber</span>
+        <span style="display:flex; align-items:center; gap:7px; font-size:0.74rem; color:var(--muted);"><span style="width:11px;height:11px;border-radius:3px;background:#5B5EA6;"></span>Slate</span>
+        <span style="display:flex; align-items:center; gap:7px; font-size:0.74rem; color:var(--muted);"><span style="width:11px;height:11px;border-radius:3px;background:#8B2E52;"></span>Burgundy</span>
+      </div>
     </div>
 
     <h3 class="sub">Neutrals</h3>
@@ -337,23 +513,23 @@
 <!-- GRADIENTS ----------------------------------------------------------- -->
 <section>
   <div class="wrap">
-    <span class="eyebrow">04 &middot; Gradients &amp; heroes</span>
+    <span class="eyebrow">05 &middot; Gradients &amp; heroes</span>
     <h2 class="sec-title">Gradients</h2>
     <p class="sec-intro">The primary gradient is the hero identity. Never present Wingate365 using the old Venture gradient.</p>
     <div class="grad-row">
-      <div class="grad"><div class="fill" style="background:linear-gradient(135deg,#0F1E2A 0%,#3D6B8F 100%)"></div><div class="lbl"><strong>Primary</strong><code>135deg, #0F1E2A &rarr; #3D6B8F</code></div></div>
-      <div class="grad"><div class="fill" style="background:linear-gradient(135deg,#3D6B8F 0%,#6FB0D4 100%)"></div><div class="lbl"><strong>Cool</strong><code>135deg, #3D6B8F &rarr; #6FB0D4</code></div></div>
-      <div class="grad"><div class="fill" style="background:linear-gradient(90deg,#3D6B8F,#B87333)"></div><div class="lbl"><strong>Signature band</strong><code>90deg, #3D6B8F &rarr; #B87333</code></div></div>
+      <div class="grad"><div class="fill" style="background:linear-gradient(135deg,#0F1E2A 0%,#0B71C7 55%,#37BEF3 100%)"></div><div class="lbl"><strong>Primary</strong><code>135deg, #0F1E2A &rarr; #0B71C7 &rarr; #37BEF3</code></div></div>
+      <div class="grad"><div class="fill" style="background:linear-gradient(135deg,#0B71C7 0%,#37BEF3 100%)"></div><div class="lbl"><strong>Cool</strong><code>135deg, #0B71C7 &rarr; #37BEF3</code></div></div>
+      <div class="grad"><div class="fill" style="background:linear-gradient(90deg,#0B71C7,#37BEF3)"></div><div class="lbl"><strong>Signature band</strong><code>90deg, #0B71C7 &rarr; #37BEF3</code></div></div>
     </div>
 
     <h3 class="sub">Hero placeholder gradients</h3>
     <p class="sec-intro" style="margin-bottom:8px">Used when a post has no hero image - a branded card with monogram and wordmark.</p>
     <div class="ph-grid">
-      <div class="ph" style="background:linear-gradient(135deg,#0F1E2A,#3D6B8F)"><span class="mono-w">W</span><span class="wm">WINGATE365</span></div>
-      <div class="ph" style="background:linear-gradient(135deg,#3D6B8F,#6FB0D4)"><span class="mono-w">W</span><span class="wm">WINGATE365</span></div>
+      <div class="ph" style="background:linear-gradient(135deg,#0F1E2A,#0B71C7)"><span class="mono-w">W</span><span class="wm">WINGATE365</span></div>
+      <div class="ph" style="background:linear-gradient(135deg,#0B71C7,#37BEF3)"><span class="mono-w">W</span><span class="wm">WINGATE365</span></div>
       <div class="ph" style="background:linear-gradient(135deg,#3D6B8F,#5B5EA6)"><span class="mono-w">W</span><span class="wm">WINGATE365</span></div>
       <div class="ph" style="background:linear-gradient(135deg,#2E7D5A,#6A8A7E)"><span class="mono-w">W</span><span class="wm">WINGATE365</span></div>
-      <div class="ph" style="background:linear-gradient(135deg,#5A3A1C,#B87333)"><span class="mono-w">W</span><span class="wm">WINGATE365</span></div>
+      <div class="ph" style="background:linear-gradient(135deg,#0F1E2A,#3D6B8F)"><span class="mono-w">W</span><span class="wm">WINGATE365</span></div>
       <div class="ph" style="background:linear-gradient(135deg,#8B2E52,#5B5EA6)"><span class="mono-w">W</span><span class="wm">WINGATE365</span></div>
     </div>
   </div>
@@ -362,7 +538,7 @@
 <!-- TYPOGRAPHY ---------------------------------------------------------- -->
 <section>
   <div class="wrap">
-    <span class="eyebrow">05 &middot; Type</span>
+    <span class="eyebrow">06 &middot; Type</span>
     <h2 class="sec-title">Typography - Figtree</h2>
     <p class="sec-intro">Figtree does everything: display, headings, body, and UI. Code uses a system mono stack. Never introduce a second display typeface.</p>
     <div class="type-sample">
@@ -386,20 +562,20 @@
 <!-- COMPONENTS ---------------------------------------------------------- -->
 <section>
   <div class="wrap">
-    <span class="eyebrow">06 &middot; Components</span>
+    <span class="eyebrow">07 &middot; Components</span>
     <h2 class="sec-title">UI patterns</h2>
-    <p class="sec-intro">Steel Blue carries links and primary UI. Copper is reserved for calls to action and emphasis. Every surface supports light and dark.</p>
+    <p class="sec-intro">Steel Blue carries links and structural UI; BC Azure is reserved for calls to action and key emphasis. Every surface supports light and dark.</p>
     <div class="comp-grid">
       <div class="comp-card">
         <div class="label">Buttons</div>
         <button class="btn btn-cta">Read the post &rarr;</button>
         &nbsp;
         <button class="btn btn-ghost">Secondary</button>
-        <p style="font-size:0.78rem;color:var(--muted);margin-top:14px">Copper CTA for the primary action, Steel ghost for secondary.</p>
+        <p style="font-size:0.78rem;color:var(--muted);margin-top:14px">Azure CTA for the primary action, Steel ghost for secondary.</p>
       </div>
       <div class="comp-card">
         <div class="label">Links &amp; emphasis</div>
-        <p class="link-demo" style="font-size:0.95rem">Here is <a href="#">a link in running text</a> - Steel Blue, underlining to Copper on hover.</p>
+        <p class="link-demo" style="font-size:0.95rem">Here is <a href="#">a link in running text</a> - Steel Blue, underlining to BC Cyan on hover.</p>
       </div>
       <div class="comp-card">
         <div class="label">Post card</div>
@@ -422,7 +598,7 @@
 <!-- VOICE --------------------------------------------------------------- -->
 <section>
   <div class="wrap">
-    <span class="eyebrow">07 &middot; Voice</span>
+    <span class="eyebrow">08 &middot; Voice</span>
     <h2 class="sec-title">Writing &amp; content</h2>
     <p class="sec-intro">First person, UK English, problem-first. Assume a competent reader who is short on time. Lead with the problem or the answer, then the detail.</p>
     <div class="voice-grid">
@@ -442,7 +618,7 @@
         <ul>
           <li>Use em dashes or en dashes - hyphens only.</li>
           <li>Present the blog as the Venture blue identity.</li>
-          <li>Flood a layout with Copper - it is a spark.</li>
+          <li>Flood a layout with BC Azure - it is a signature, not a wash.</li>
           <li>Mix in a second display typeface.</li>
           <li>Write clever puns for titles - people arrive from search.</li>
           <li>Invent duplicate tags ("bc" vs "business central").</li>
@@ -468,7 +644,7 @@
 <!-- QUICK REF ----------------------------------------------------------- -->
 <section>
   <div class="wrap">
-    <span class="eyebrow">08 &middot; At a glance</span>
+    <span class="eyebrow">09 &middot; At a glance</span>
     <h2 class="sec-title">Quick reference</h2>
     <div class="quickref">
       <div class="qr-grid">
@@ -485,20 +661,21 @@
         </div>
         <div class="qr-item">
           <div class="qh">Signature</div>
-          <div class="qv"><span class="qr-chip"><span class="d" style="background:#B87333"></span>Copper #B87333</span><br><span style="color:rgba(255,255,255,0.5)">hover #9A5E27 &middot; dark #CF8A4A</span></div>
+          <div class="qv"><span class="qr-chip"><span class="d" style="background:#0B71C7"></span>BC Azure #0B71C7</span><br><span style="color:rgba(255,255,255,0.5)">hover #095CA3 &middot; cyan #37BEF3</span></div>
         </div>
         <div class="qr-item">
           <div class="qh">Semantic</div>
           <div class="qv">
             <span class="qr-chip"><span class="d" style="background:#2E7D5A"></span>Success</span> &nbsp;
-            <span class="qr-chip"><span class="d" style="background:#8B2E52"></span>Warning</span><br>
+            <span class="qr-chip"><span class="d" style="background:#C77D1A"></span>Caution</span><br>
+            <span class="qr-chip"><span class="d" style="background:#8B2E52"></span>Warning</span> &nbsp;
             <span class="qr-chip"><span class="d" style="background:#5B5EA6"></span>Info</span> &nbsp;
             <span class="qr-chip"><span class="d" style="background:#6A8A7E"></span>Muted</span>
           </div>
         </div>
         <div class="qr-item">
           <div class="qh">Gradient</div>
-          <div class="qv mono" style="font-size:0.78rem">linear-gradient(135deg,<br>#0F1E2A, #3D6B8F)</div>
+          <div class="qv mono" style="font-size:0.78rem">linear-gradient(135deg,<br>#0F1E2A, #0B71C7, #37BEF3)</div>
         </div>
         <div class="qr-item">
           <div class="qh">Voice</div>
@@ -510,7 +687,7 @@
 </section>
 
 <footer>
-  Wingate365 Brand Bible &middot; full written reference in <code>BRAND-GUIDE.md</code>
+  Wingate365 Brand Guide &middot; colour, typography, voice &amp; article conventions
 </footer>
 
 </body>

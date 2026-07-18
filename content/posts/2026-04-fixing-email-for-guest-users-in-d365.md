@@ -1,4 +1,4 @@
----
+﻿---
 title: "Fixing Email for Guest Users in D365 Business Central"
 date: 2026-04-26T20:41:00Z
 lastmod: 2026-06-07T10:05:00Z
@@ -83,8 +83,3 @@ author: "Andy Wingate"
 <li><a href="https://learn.microsoft.com/en-us/graph/api/user-sendmail" target="_blank">Microsoft Graph - sendMail API</a></li>
 <li><a href="https://github.com/ajkauffmann/RestClientOAuth" target="_blank">AJ Kauffmann's RestClientOAuth library</a></li>
 </ul>
-
-<h2>What do you think?</h2>
-
-<p>Connect or follow me on LinkedIn to get all my updates <a href="https://www.linkedin.com/in/andywingate/" target="_blank">Andrew Wingate | LinkedIn</a></p>
-

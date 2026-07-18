@@ -76,9 +76,13 @@ enableGitInfo = false
     pageRef = "/tags"
     weight = 20
   [[menus.main]]
+    name = "WhatsApp"
+    pageRef = "/whatsapp"
+    weight = 30
+  [[menus.main]]
     name = "About"
     pageRef = "/about"
-    weight = 30
+    weight = 40
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Graph API Email account types for D365 BC"
 date: 2026-06-07T10:13:30Z
 lastmod: 2026-06-07T10:22:36Z
@@ -29,10 +29,10 @@ author: "Andy Wingate"
 <h2>What Phase 3 Delivers</h2>
 
 <ul>
-  <li>✅ Token security hardened - <code>SecretText</code>, <code>[NonDebuggable]</code>, encrypted <code>IsolatedStorage</code></li>
-  <li>✅ Full multi-tenancy support - one App Registration per home domain, matched automatically at send time</li>
-  <li>✅ User mailbox and shared mailbox support via Graph API</li>
-  <li>✅ CC, BCC and attachment support</li>
+  <li>âœ… Token security hardened - <code>SecretText</code>, <code>[NonDebuggable]</code>, encrypted <code>IsolatedStorage</code></li>
+  <li>âœ… Full multi-tenancy support - one App Registration per home domain, matched automatically at send time</li>
+  <li>âœ… User mailbox and shared mailbox support via Graph API</li>
+  <li>âœ… CC, BCC and attachment support</li>
 </ul>
 
 <h2>How It Works Now</h2>
@@ -56,8 +56,8 @@ author: "Andy Wingate"
 <h2>What's Next</h2>
 
 <ul>
-  <li>✅ Submit to <strong>AppSource as a free app</strong> - the big next step</li>
-  <li>✅ System Application module adoption</li>
+  <li>âœ… Submit to <strong>AppSource as a free app</strong> - the big next step</li>
+  <li>âœ… System Application module adoption</li>
 </ul>
 
 <p>Publishing to AppSource is the next challenge.</p>
@@ -82,5 +82,3 @@ author: "Andy Wingate"
   <li><a href="https://learn.microsoft.com/en-us/graph/api/user-sendmail">Microsoft Graph - sendMail API reference</a></li>
   <li><a href="https://blog.wingate365.com/2026/04/fixing-email-for-guest-users-in-d365.html">Previous post - Fixing Email for Guest Users in D365 BC</a></li>
 </ul>
-
-<p>Connect or follow me on LinkedIn to get all my updates - <a href="https://www.linkedin.com/in/andywingate/">Andrew Wingate | LinkedIn</a></p>
