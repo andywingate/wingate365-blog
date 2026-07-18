@@ -1,8 +1,8 @@
 ---
-title: "Drafting Hugo Posts Directly in GitHub - Is Process Mining Still Relevant for Business Central?"
+title: "Drafting Hugo Posts Directly in GitHub for Business Central Process Mining Research"
 date: 2026-07-18T15:13:49Z
 lastmod: 2026-07-18T15:13:49Z
-tags: ["d365bc", "copilot", "ai", "power platform"]
+tags: ["d365bc", "copilot", "ai", "powerplatform"]
 hero: ""
 heroCaption: ""
 author: "Andy Wingate"
@@ -31,7 +31,7 @@ That is enough for early-stage ideas, outlines, and research notes. You do not n
 
 The product Microsoft bought was **Minit**.
 
-Microsoft announced the acquisition in March 2022, and the capability now sits inside **Power Automate Process Mining**. In practical terms, if you are looking for the Microsoft-native process mining story today, that is the product line to watch rather than Minit as a standalone brand.
+Microsoft announced the acquisition in [March 2022](https://blogs.microsoft.com/blog/2022/03/31/microsoft-acquires-minit-to-strengthen-process-mining-capabilities/), and the capability now sits inside [Power Automate Process Mining](https://www.microsoft.com/en-us/power-platform/blog/2023/07/18/microsoft-launches-power-automate-process-mining-and-next-generation-ai/). In practical terms, if you are looking for the Microsoft-native process mining story today, that is the product line to watch rather than Minit as a standalone brand.
 
 That matters for Business Central because the question is rarely "can I get data out?" The real question is whether I can turn events across orders, approvals, purchasing, warehousing, and finance into a view of how work actually flows.
 
