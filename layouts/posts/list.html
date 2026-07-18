@@ -4,6 +4,7 @@
 
     <aside class="archive-nav" aria-label="Post archive">
       <h2 class="widget-title">Archive</h2>
+      <button type="button" class="archive-reset" aria-label="Show all posts">&larr; All posts</button>
       <nav class="archive-tree">
         {{- range $i, $yg := .Pages.GroupByDate "2006" }}
         <details class="archive-year"{{ if eq $i 0 }} open{{ end }}>
@@ -48,4 +49,57 @@
 
   </div>
 </div>
+<script>
+(function () {
+  var root = document.querySelector('.archive-layout');
+  if (!root) return;
+  var main = root.querySelector('.archive-main');
+  var reset = root.querySelector('.archive-reset');
+  var monthLinks = root.querySelectorAll('.archive-tree a[href^="#m-"]');
+  var monthBlocks = main.querySelectorAll('.archive-month');
+  var yearBlocks = main.querySelectorAll('.archive-year-block');
+  var pageHeader = main.querySelector('.page-header');
+
+  function showAll() {
+    yearBlocks.forEach(function (y) { y.hidden = false; });
+    monthBlocks.forEach(function (m) { m.hidden = false; });
+    monthLinks.forEach(function (l) { l.classList.remove('active'); });
+    if (reset) reset.classList.remove('is-visible');
+    if (pageHeader) pageHeader.hidden = false;
+  }
+
+  function filterMonth(id) {
+    var target = document.getElementById(id);
+    if (!target) { showAll(); return; }
+    monthBlocks.forEach(function (m) { m.hidden = m !== target; });
+    yearBlocks.forEach(function (y) { y.hidden = !y.contains(target); });
+    monthLinks.forEach(function (l) {
+      l.classList.toggle('active', l.getAttribute('href') === '#' + id);
+    });
+    if (reset) reset.classList.add('is-visible');
+    if (pageHeader) pageHeader.hidden = true;
+  }
+
+  monthLinks.forEach(function (l) {
+    l.addEventListener('click', function (e) {
+      e.preventDefault();
+      var id = l.getAttribute('href').slice(1);
+      filterMonth(id);
+      history.replaceState(null, '', '#' + id);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+  if (reset) reset.addEventListener('click', function () {
+    showAll();
+    history.replaceState(null, '', location.pathname);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Honour a month hash on initial load (e.g. linked from elsewhere)
+  if (location.hash && /^#m-\d{4}-\d{2}$/.test(location.hash)) {
+    filterMonth(location.hash.slice(1));
+  }
+})();
+</script>
 {{ end }}

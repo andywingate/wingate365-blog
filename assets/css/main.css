@@ -658,15 +658,13 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
 /* Posts archive ----------------------------------------------------------- */
 .archive-layout {
   display: grid;
-  grid-template-columns: 14rem minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) 14rem;
   gap: 2.5rem;
   align-items: start;
 }
 .archive-nav {
-  position: sticky;
-  top: 4.5rem;
-  max-height: calc(100vh - 6rem);
-  overflow-y: auto;
+  grid-column: 2;
+  grid-row: 1;
 }
 .archive-tree { display: flex; flex-direction: column; gap: 0.15rem; }
 .archive-year { border-bottom: 1px solid var(--border); }
@@ -709,9 +707,26 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
   border-radius: 5px;
 }
 .archive-year ul a:hover { background: var(--bg-subtle); color: var(--accent); text-decoration: none; }
+.archive-year ul a.active { background: var(--bg-subtle); color: var(--accent); font-weight: 700; }
 .archive-count { font-size: 0.72rem; color: var(--text-muted); font-weight: 500; }
+.archive-reset {
+  display: none;
+  align-self: flex-start;
+  margin-bottom: 0.75rem;
+  padding: 0.3rem 0.75rem;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.archive-reset:hover { border-color: var(--accent); }
+.archive-reset.is-visible { display: inline-block; }
 
-.archive-main { min-width: 0; }
+.archive-main { min-width: 0; grid-column: 1; grid-row: 1; }
 .archive-year-block { margin-bottom: 2.5rem; scroll-margin-top: 5rem; }
 .archive-year-heading {
   font-size: 1.5rem;
@@ -774,11 +789,13 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
   .archive-layout { grid-template-columns: 1fr; gap: 1.5rem; }
   .archive-nav {
     position: static;
-    max-height: none;
+    grid-column: 1;
+    grid-row: auto;
     border: 1px solid var(--border);
     border-radius: 10px;
     padding: 0.75rem 1rem;
   }
+  .archive-main { grid-column: 1; grid-row: auto; }
 }
 
 @media (max-width: 34rem) {
