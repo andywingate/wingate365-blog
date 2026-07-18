@@ -3,7 +3,7 @@ title: "Identifying and Bridging your Skill Gaps for Dynamics 365 Business Centr
 date: 2024-11-03T18:16:00Z
 lastmod: 2024-11-03T18:27:20Z
 url: "/2024/11/identifying-and-bridging-your-skill.html"
-tags: ["End User to Consultant"]
+tags: ["end user to consultant"]
 hero: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqrsTeua9rbBNUMeUtJPCYt6P1n3dn_q753-M1TCJHy04vYmpJQR8v2Iv9WAXBuxpAR0ygF44FDHQME8fTHnhp_rzFIrqf_6t1Ues7AX5zYw119DzSe4bBPJ2ui07Ng0FwD2I1-xSguEcu8xWUa1Pi47sLMmnlYSjklTuRzTRy4zqxAYtouZzz/w640-h426/sea-6568951_1920.jpg"
 author: "Andy Wingate"
 ---

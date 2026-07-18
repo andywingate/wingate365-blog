@@ -3,7 +3,7 @@ title: "From End-User to Partner-Side Consultant: Continuous Learning  "
 date: 2024-10-05T20:07:00Z
 lastmod: 2024-10-05T21:17:46Z
 url: "/2024/10/from-end-user-to-partner-side.html"
-tags: ["End User to Consultant"]
+tags: ["end user to consultant"]
 hero: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNdyg94Ycb7Vb6FmDxTqNchCylzGcfwczxeNSmF-pxqIxFRbEwU-G4QR_qMpaZnwPhsXbpSYZwIoqEdLMW2Ocgga_t5-QMyhcQzlNl9ofgaHQo7mmkiI_98KlQs8iRr1LQ5h3ruvI3ezE3lP-b4r1BsEPZNkd-ASosOzrPTYdX3eZcJMscDhHU/w640-h458/classroom-2093744_1920.jpg"
 author: "Andy Wingate"
 ---

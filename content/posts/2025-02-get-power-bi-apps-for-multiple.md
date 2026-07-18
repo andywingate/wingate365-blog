@@ -3,7 +3,7 @@ title: "Get the Power BI apps for Multiple Companies in Dynamics 365 Business Ce
 date: 2025-02-01T12:55:00Z
 lastmod: 2025-03-14T14:25:24Z
 url: "/2025/02/get-power-bi-apps-for-multiple.html"
-tags: ["Power BI", "Video"]
+tags: ["power bi", "video"]
 hero: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhioutFIaIctx7Y3oz5XSTBh3wTTLC_KV1185Wu5jkmpqwMnbx0eCHVt9tCE0FHmC3rx9oFOl7x5npd9tL9yp5BmFi2_g0fgtGhc7sw0cgfwRq3uMWihwoqVOvZCG_3it96ZCG21ewWDRsqZsCnmLRPMB_cvYt9LSu0AvRIe4N7YY3XUOSO76Mt/w640-h302/2025-02-01_11h56_57.png"
 author: "Andy Wingate"
 ---

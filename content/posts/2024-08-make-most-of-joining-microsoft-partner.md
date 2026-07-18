@@ -3,7 +3,7 @@ title: "Make the most of joining a Microsoft Partner"
 date: 2024-08-15T10:36:00Z
 lastmod: 2024-09-15T17:41:25Z
 url: "/2024/08/make-most-of-joining-microsoft-partner.html"
-tags: ["End User to Consultant"]
+tags: ["end user to consultant"]
 hero: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgs29X-WISfDKiBtT_B2CqbTtzhEmXI0zxxgjpB16in8P1QrxSmQ_HB5zSANMTYG2I9TzD4oUkY6q1-ivWrcn1PaAUHf5xhxcB_mGE9fViYNTz_KfFuRzrWjIU_j32HDlLiVCWHNgPd5O9Z_zX0O5p3XPhZCd9W97LXs3F_ECAnwHQXcSRfTESd/w640-h480/veil-387608_1920.jpg"
 author: "Andy Wingate"
 ---

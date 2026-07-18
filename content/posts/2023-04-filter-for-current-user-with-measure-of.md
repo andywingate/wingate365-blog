@@ -3,7 +3,7 @@ title: "How to filter the current user with measures in your Dynamics 365 Busine
 date: 2023-04-07T14:53:00Z
 lastmod: 2025-02-01T13:12:39Z
 url: "/2023/04/filter-for-current-user-with-measure-of.html"
-tags: ["d365bc", "Power BI"]
+tags: ["d365bc", "power bi"]
 hero: "https://blogger.googleusercontent.com/img/a/AVvXsEj82yZIa5BWQ4pQKoI44od-Eyy3TM5j-h_SbWmwRZxz-bw6EedT33xZ7toZiUZj6iw3JilOS9X27Ctvc3cREPvUeZXdne-QaFnyM9Umq4Kfs79KVZFm9Di6USaf3dGbwn4iEOU7cxA6rLTYAA2CPyhL8356KrTVYI-ya-vb1INfXSJPsbPZVA"
 author: "Andy Wingate"
 ---

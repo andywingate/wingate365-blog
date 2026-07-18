@@ -3,7 +3,7 @@ title: "The Power of the Microsoft Dynamics 365 Community"
 date: 2024-09-07T14:17:00Z
 lastmod: 2024-09-15T17:39:34Z
 url: "/2024/09/the-power-of-microsoft-dynamics-365.html"
-tags: ["End User to Consultant", "community"]
+tags: ["end user to consultant", "community"]
 hero: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir0C_q8yAYnGtkjnjZtZMslXRo86VrHwvcRlJJfbIJS4ijP__ZxiEolIqUCs0Bz9Dv9aLaloyCW1T8DQhbqmmdbgReafaC2KoKe0NDJFoyeAfRR89-E4FvLZUk1goaFHkHj6BjmmAnP6fEUrfoUdYX1VPqNPrJmrjVQpwfMlz0pLCQ3O2zcWtO/w640-h426/concert-3387324_1920%20(1).jpg"
 author: "Andy Wingate"
 ---

@@ -3,7 +3,7 @@ title: "From Dynamics End User to Partner-Side Consultant "
 date: 2024-08-11T18:35:00Z
 lastmod: 2024-09-15T17:42:13Z
 url: "/2024/08/from-dynamics-end-user-to-partner-side.html"
-tags: ["End User to Consultant"]
+tags: ["end user to consultant"]
 hero: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhftKs4Qi63CTkZttLdXjy-9LTTRNd9Tz0ofSW28GpoH1YGSuS_pCE0J6j-r7kwioRM6PMOb1-l7vsISA7n8UdLG-E06lPKOLzYJiSdoe_yQUKDEO3WkFm5VXt9f7d1tdXoUdUQsUtz6PlRGxLzN2-dY7ISGd4NBeaUNrMgVKPj3anQjq82v0ce/w640-h426/map-950353_1920.jpg"
 author: "Andy Wingate"
 ---

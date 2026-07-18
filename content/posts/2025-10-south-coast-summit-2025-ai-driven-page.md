@@ -3,7 +3,7 @@ title: "South Coast Summit 2025 - AI-Driven Page Scripting: Practical Use Cases 
 date: 2025-10-18T21:12:00Z
 lastmod: 2025-10-18T22:29:14Z
 url: "/2025/10/south-coast-summit-2025-ai-driven-page.html"
-tags: ["talks", "AI", "vibe coding"]
+tags: ["talks", "ai", "vibe coding"]
 hero: "https://blogger.googleusercontent.com/img/a/AVvXsEidE3UBJFVGDBlaERpyLggItYtIcHu6FqS_d-U9G625JliHyUPeD_mlBN16LZ90H1W-hdyhCuzoB33E3w-9nDXO84GPfRh6IOolLx4nEoBirjky7oKKSmfgCOQFqba9kTUeiJHtcFSCHoJnvgKGo1isaupEp2ofbDVxwGbI9oGs3w-RAT8FeIV0=w640-h320"
 author: "Andy Wingate"
 ---

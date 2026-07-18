@@ -3,7 +3,7 @@ title: "What really counts when you are a Consultant?"
 date: 2024-09-01T16:44:00Z
 lastmod: 2024-09-15T17:40:29Z
 url: "/2024/09/what-really-counts-when-you-are.html"
-tags: ["End User to Consultant"]
+tags: ["end user to consultant"]
 hero: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ3559UrcPSoMxsAbMQ9Yz5R5q-skDN3eB5DZUiA-LwUNzUZl9OZWnzhIgYUEvFPT9foluyBxqnRUrIQbksj-YTk0I7Pe4uZgq-35FmZWs7WMxH4lZMUvvyOGC_SRJXW9pAyFJqObRe1xqrOhwDslxp2plQUYCcBvO5i74N6BrxfGj8jP9GBZc/w640-h424/men-4701599_1920.jpg"
 author: "Andy Wingate"
 ---

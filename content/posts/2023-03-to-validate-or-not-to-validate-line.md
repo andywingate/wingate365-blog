@@ -3,7 +3,7 @@ title: "To Validate or Not to Validate:  Line validation in Dynamics 365 Busines
 date: 2023-03-05T19:54:00Z
 lastmod: 2023-03-29T07:32:44Z
 url: "/2023/03/to-validate-or-not-to-validate-line.html"
-tags: ["d365bc", "ChatGPT", "al"]
+tags: ["d365bc", "chatgpt", "al"]
 hero: "https://blogger.googleusercontent.com/img/a/AVvXsEjEcVk7yhYIa6l_gHJOl-cOR_yz-P29bnyvFwgUU1_vb9S1gFHZYC_uSbNO7Rt_dQOhpJK2iNmIk26VPJXZLQ5D9oA7Cy1wkWZKIzOGNW8XNjnAHUj-Cjn0NmvRF0s3_RNB2SBC5bwPZ4Vb0lMCs481h4W5SLzCqseh_t1KNyyI8GenEPYq3g"
 author: "Andy Wingate"
 ---

@@ -3,7 +3,7 @@ title: "Improve your Dynamics 365 Business Central security: Just-in-Time access
 date: 2024-11-19T19:33:00Z
 lastmod: 2025-02-16T18:11:26Z
 url: "/2024/11/improve-your-dynamics-365-business.html"
-tags: ["d365bc", "Security"]
+tags: ["d365bc", "security"]
 hero: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKthwX_cPnPYKZI9zWrtAH0PgyMJFifmY5v4trPWiyCs4-4ed8yG6se-oh4yFQeJdDko5gdBgUgAAqFOM3oV2k-JvDJRUFsZFDRjpnlATCaLa_LFkY3yzA3h526WR4XfM2bvxkzqCakhyphenhyphenTditg-d4YiDCreUrUggzWAYbsZHLP4weP5Y5pKQgV/w400-h216/2024-11-19_19h35_22.png"
 author: "Andy Wingate"
 ---

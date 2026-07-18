@@ -3,7 +3,7 @@ title: "Give me Dynamics 365 Business Central Capacity in a Power BI mini-chart 
 date: 2024-12-15T20:40:00Z
 lastmod: 2025-02-01T13:13:30Z
 url: "/2024/12/give-me-dynamics-365-business-central.html"
-tags: ["Power BI", "Admin API"]
+tags: ["power bi", "admin api"]
 hero: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLKP03FyI2Utk5iXVultq9VAkvg5KnC00BR_F26ntHJlnq4RLYzpu61damMpES8VdN_4T8BKsX1Y4WJPdosAielioJjbhogGT9FUxZJWNHN7XQaLyTgR7Z0E05cse3zRqFRWxRQkKwWsYt9E1x3L4krI5l5chfxoMhHr-VY4Ej-pHdQVwWUz22/w640-h256/2024-12-15_20h39_46.png"
 author: "Andy Wingate"
 ---

@@ -3,7 +3,7 @@ title: "Dynamics 365 Business Central - Reimagine your future with Reskill"
 date: 2024-09-22T14:13:00Z
 lastmod: 2024-10-02T14:38:11Z
 url: "/2024/09/dynamics-365-business-central-reimagine.html"
-tags: ["End User to Consultant"]
+tags: ["end user to consultant"]
 hero: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEildxGSWXLgPIczYvx-aha5c2tWM5axJbN4XA4y7P8yZyOITlLx5txQ3vBL2SDtpvi4h6z0ciOVFniulPK1R8HHasNKThfkDyQEA7ehyphenhyphen_Aq0ECpgX80AvPKThvyOY4oOBtck_5acwFHUh8i-7jYXA9LIwNZ-KvL_ArGPmVGhf0vSn_LmIeu_yhd/w640-h278/image%20(1).png"
 author: "Andy Wingate"
 ---

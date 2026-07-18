@@ -3,7 +3,7 @@ title: "Mastering Dynamics 365 BC Security - Admin Center"
 date: 2025-02-08T11:48:00Z
 lastmod: 2025-02-16T18:11:37Z
 url: "/2025/02/mastering-dynamics-365-bc-security.html"
-tags: ["d365bc", "Video", "Security"]
+tags: ["d365bc", "video", "security"]
 hero: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8TQKQeP4cowsz_aD2d8aiJwqf_jXBvtZgs8krYPi1lSdbyVfgaSHcGDagEyIAiaA1sut6qcCeQyOS6HC56COwZgGfkQaEpqdmw98zaJGTklsCoxtu_mqWQwSuMgdgEeNZ-1gfVwweq1LM7oR0oevP5L77AWGnQNZu5My7sY0pfzeWsV-_AW_8/w640-h360/2025-02-08_11h25_26%20yt.png"
 author: "Andy Wingate"
 ---

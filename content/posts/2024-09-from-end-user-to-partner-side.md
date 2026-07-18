@@ -3,7 +3,7 @@ title: "From End-User to Partner-Side Consultant: What are Your End-User Superpo
 date: 2024-09-15T16:34:00Z
 lastmod: 2024-09-29T13:43:09Z
 url: "/2024/09/from-end-user-to-partner-side.html"
-tags: ["End User to Consultant"]
+tags: ["end user to consultant"]
 hero: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhfTEbqwHyxQrLTe5OjjEEicpRFc07PgV5aldTRVgJ6nz8qSfyMhFu5xrBVDsV8ZO-FgFG2w_bo-GC1md1FTLO7os1tTpj5qZl0Q393S6jE5PH3klJZ5pLL7wJBXaiLjOFW7xFZa4AUtqgVCzjJru5ZvmIiVLfNcuYtzRoL1KKUaNVeEwwVzXI/w640-h426/girl-1561989_1920.jpg"
 author: "Andy Wingate"
 ---

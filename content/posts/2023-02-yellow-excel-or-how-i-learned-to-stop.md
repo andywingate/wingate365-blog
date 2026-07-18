@@ -3,7 +3,7 @@ title: "Yellow Excel or: How I Learned to stop worrying and Love PowerBI for Dyn
 date: 2023-02-25T12:26:00Z
 lastmod: 2025-02-01T13:12:45Z
 url: "/2023/02/yellow-excel-or-how-i-learned-to-stop.html"
-tags: ["d365bc", "Power BI", "api"]
+tags: ["d365bc", "power bi", "api"]
 hero: "https://blogger.googleusercontent.com/img/a/AVvXsEixhYZkiRAzIzBfqdAUv_saEH9BxvoiEN2dAEUWA5CnetuDeQ5PrP6LBukhOfhEJHs0OLitzVmLE183m_1QRK6opJbPmco8h49zBUVBLcY1I4CaPT7Vt9ChsyoZjLn6Ysqmx_t-4xmIOnwTnUfKmNWAR4evf9P3LbjYXR3KpoPfqEbDpFq8qA"
 author: "Andy Wingate"
 ---

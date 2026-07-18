@@ -3,7 +3,7 @@ title: "Give me a fresh sandbox copy of my D365 BC production environment each n
 date: 2024-12-07T20:40:00Z
 lastmod: 2025-02-01T13:13:41Z
 url: "/2024/12/give-me-fresh-sandbox-copy-of-my-d365.html"
-tags: ["Admin API"]
+tags: ["admin api"]
 hero: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwak2sJSdCWwcBywyBJt93CcHCzXGAfkIYJL-LQvm-Yk3u7Syowd8t9MWo8gIxWq9qYQo1Cskxlw923uML00YVxtmAzBZM7lHhQn4BKQ2cjkGW258sBTAoDt4m6JT-WfQ2bq_WxL-XUgPp3sjRHi1Xx6e6K4MuXZZNKHp6N9ph-74T3OdAqvZa/w640-h296/2024-12-07_19h23_58.png"
 author: "Andy Wingate"
 ---
