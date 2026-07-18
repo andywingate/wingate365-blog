@@ -16,7 +16,8 @@ description: "Andy Wingate - Business Central Practice Director and Microsoft MV
 
 ## A bit of background
 
-I've worked with Dynamics NAV and Business Central since 2015. I spent roughly 12 years on the end-user side, managing business process, systems and core IT. I moved to work as a delivery resource at a Microsoft Partner in early 2022. Having sat on both side of the fence have really shape how i approach project delivery. I try to keep what I share here practical, first-hand, and focused on what actually works for real people work hard to use these tool to get the job done.
+I've worked with Dynamics NAV and Business Central since 2015. I spent roughly 12 years on the end-user side, managing business process, systems and core IT. I moved to work as a delivery resource at a Microsoft Partner in early 2022. Having sat on both side of the fence has shaped how I approach and deliver sucessful projects. 
+I try to keep what I share here practical, first-hand, and focused on what actually works for real people work hard to use these tool to get the job done.
 
 I love sharing knowledge, discussing ideas, and finding out how others understand and
 solve problems. Interacting with the
