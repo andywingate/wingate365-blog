@@ -10,7 +10,7 @@ These instructions apply to the whole repo. The most common task is **writing a 
 - Content lives in `content/posts/` as one file per post, named `YYYY-MM-slug.md`.
 - Permalinks: `hugo.toml` sets `posts = "/:year/:month/:slug"` with `[uglyURLs] posts = true`, so each post publishes to `/YYYY/MM/slug.html` (the legacy Blogger URL shape).
 - Raw HTML is allowed in content (`markup.goldmark.renderer.unsafe = true`), so **migrated posts are HTML and that is fine**. All **new** posts must be written in **Markdown**.
-- Build output goes to `public/` (committed). Do not hand-edit anything in `public/` - it is generated.
+- Build output goes to `public/`, which is **gitignored** and rebuilt by GitHub Actions on push - do not commit it. Do not hand-edit anything in `public/` - it is generated.
 
 ## How to write a new article
 
@@ -80,7 +80,7 @@ This uses `archetypes/posts.md`.
 3. Tags reuse existing vocabulary, all lowercase.
 4. `hero` is either a real image URL (with optional caption) or left `""` for a placeholder.
 5. `hugo --gc --minify` builds with no errors.
-6. Commit the `content/` change and the regenerated `public/` output together.
+6. Commit the `content/` change (plus any new `static/` image). Do not commit `public/` - it is gitignored and rebuilt by GitHub Actions on push.
 
 ## House style
 
