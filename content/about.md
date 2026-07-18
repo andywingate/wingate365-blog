@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About me"
 url: "/about"
 type: "page"
 description: "Andy Wingate - Business Central Practice Director and Microsoft MVP."
