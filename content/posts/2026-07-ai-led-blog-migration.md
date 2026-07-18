@@ -6,7 +6,7 @@ tags: ["ai", "copilot", "vibe coding", "web"]
 hero: "/images/heroes/blogger-to-github.svg"
 heroCaption: ""
 author: "Andy Wingate"
-linkedin: "https://www.linkedin.com/in/andywingate/"
+linkedin: "https://www.linkedin.com/posts/andywingate_ai-copilot-businesscentral-share-7484279794134765569-7gS-"
 draft: false
 ---
 
