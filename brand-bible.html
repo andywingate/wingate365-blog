@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wingate365 Brand Bible</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap">
+<style>
+  :root {
+    /* Foundation */
+    --ink:            #0F1E2A;
+    --steel:          #3D6B8F;
+    --sky:            #6FB0D4;
+    --mist-blue:      #8CC7E3;
+    /* Signature */
+    --copper:         #B87333;
+    --copper-deep:    #9A5E27;
+    /* Extended */
+    --forest:         #2E7D5A;
+    --burgundy:       #8B2E52;
+    --slate:          #5B5EA6;
+    --sage:           #6A8A7E;
+    /* Neutrals */
+    --paper:          #FFFFFF;
+    --mist:           #F4F7FA;
+    --cloud:          #E2E8EE;
+    --body:           #1A2530;
+    --muted:          #5A6B78;
+    --gradient-primary: linear-gradient(135deg, #0F1E2A 0%, #3D6B8F 100%);
+    --gradient-cool:    linear-gradient(135deg, #3D6B8F 0%, #6FB0D4 100%);
+    --gradient-signature: linear-gradient(90deg, #3D6B8F, #B87333);
+  }
+
+  * , *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: "Figtree", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--body);
+    background: var(--mist);
+    line-height: 1.65;
+    font-size: 16px;
+  }
+  code, .mono {
+    font-family: "SFMono-Regular", "Cascadia Code", Consolas, "Liberation Mono", Menlo, monospace;
+  }
+
+  /* Layout ------------------------------------------------------------- */
+  .wrap { max-width: 1080px; margin-inline: auto; padding: 0 28px; }
+  section { padding: 64px 0; border-bottom: 1px solid var(--cloud); }
+  section:last-child { border-bottom: none; }
+
+  .eyebrow {
+    display: inline-block;
+    font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.1em; color: var(--steel);
+    margin-bottom: 12px;
+  }
+  h2.sec-title {
+    font-size: 2rem; font-weight: 800; color: var(--ink);
+    letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 10px;
+  }
+  .sec-intro { color: var(--muted); max-width: 680px; font-size: 1.02rem; margin-bottom: 34px; }
+  h3.sub {
+    font-size: 1.05rem; font-weight: 700; color: var(--ink);
+    margin: 34px 0 16px; letter-spacing: -0.01em;
+  }
+
+  /* Hero --------------------------------------------------------------- */
+  .hero {
+    background: var(--gradient-primary);
+    color: #fff;
+    padding: 96px 0 84px;
+    position: relative; overflow: hidden;
+  }
+  .hero::after {
+    content:""; position:absolute; top:-120px; right:-120px;
+    width:420px; height:420px; border-radius:50%;
+    background: radial-gradient(circle, rgba(184,115,51,0.28), transparent 70%);
+    pointer-events:none;
+  }
+  .hero .wrap { position: relative; z-index: 1; }
+  .hero-dots { display:flex; gap:10px; margin-bottom: 26px; }
+  .hero-dots span { width:30px; height:30px; border-radius:50%; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+  .hero h1 {
+    font-size: 3.4rem; font-weight: 800; letter-spacing: -0.03em;
+    line-height: 1.02; margin-bottom: 18px;
+  }
+  .hero h1 .yr { color: var(--copper); }
+  .hero p.lead { font-size: 1.25rem; color: var(--mist-blue); max-width: 620px; line-height: 1.5; }
+  .hero .stamp {
+    margin-top: 28px; display:inline-flex; align-items:center; gap:10px;
+    font-size: 0.8rem; color: rgba(255,255,255,0.65);
+    border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 6px 16px;
+  }
+
+  /* Personality cards -------------------------------------------------- */
+  .trait-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 16px; }
+  .trait {
+    background: var(--paper); border: 1px solid var(--cloud); border-radius: 12px;
+    padding: 20px; border-top: 3px solid var(--steel);
+  }
+  .trait:nth-child(2){ border-top-color: var(--copper); }
+  .trait:nth-child(3){ border-top-color: var(--forest); }
+  .trait:nth-child(4){ border-top-color: var(--slate); }
+  .trait:nth-child(5){ border-top-color: var(--burgundy); }
+  .trait h4 { font-size: 0.98rem; color: var(--ink); margin-bottom: 6px; font-weight: 700; }
+  .trait p { font-size: 0.86rem; color: var(--muted); line-height: 1.55; }
+
+  /* Divergence --------------------------------------------------------- */
+  .diverge { display:grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .diverge .col {
+    background: var(--paper); border:1px solid var(--cloud); border-radius: 12px; overflow: hidden;
+  }
+  .diverge .col .band { height: 70px; display:flex; }
+  .diverge .col .band > div { flex:1; }
+  .diverge .col .txt { padding: 18px 20px; }
+  .diverge .col h4 { font-size: 0.95rem; color: var(--ink); margin-bottom: 6px; }
+  .diverge .col p { font-size: 0.84rem; color: var(--muted); }
+  .diverge .col .tag { font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; padding: 3px 9px; border-radius:4px; display:inline-block; margin-bottom:10px; }
+  .tag-old { background:#eceff2; color:#77828c; }
+  .tag-new { background: rgba(184,115,51,0.14); color: var(--copper-deep); }
+
+  /* Swatches ----------------------------------------------------------- */
+  .swatch-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(180px,1fr)); gap: 16px; }
+  .swatch { border-radius: 12px; overflow: hidden; background: var(--paper); border:1px solid var(--cloud); box-shadow: 0 1px 3px rgba(15,30,42,0.05); }
+  .swatch .block { height: 104px; display:flex; align-items:flex-end; padding: 10px 12px; }
+  .swatch .block .hex { font-size: 0.72rem; font-weight:600; }
+  .swatch .info { padding: 12px 14px; }
+  .swatch .info strong { display:block; font-size: 0.88rem; color: var(--ink); }
+  .swatch .info .role { font-size: 0.74rem; color: var(--muted); margin-top: 3px; line-height:1.4; }
+  .swatch .info code { font-size: 0.7rem; color: var(--steel); }
+
+  /* Gradients ---------------------------------------------------------- */
+  .grad-row { display:grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .grad { border-radius: 12px; overflow:hidden; border:1px solid var(--cloud); background: var(--paper); }
+  .grad .fill { height: 88px; }
+  .grad .lbl { padding: 12px 14px; }
+  .grad .lbl strong { font-size: 0.84rem; color: var(--ink); display:block; }
+  .grad .lbl code { font-size: 0.68rem; color: var(--muted); }
+
+  .ph-grid { display:grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-top: 8px; }
+  .ph {
+    aspect-ratio: 16/10; border-radius: 10px; position: relative; overflow:hidden;
+    display:flex; align-items:flex-end; padding: 12px 14px;
+    box-shadow: 0 2px 10px rgba(15,30,42,0.12);
+  }
+  .ph .mono-w {
+    position:absolute; top:-8px; left:6px; font-size:5.4rem; font-weight:800;
+    color:rgba(255,255,255,0.16); line-height:1;
+  }
+  .ph .wm { font-size:0.66rem; font-weight:700; letter-spacing:0.08em; color:rgba(255,255,255,0.6); position:relative; z-index:1; }
+
+  /* Typography --------------------------------------------------------- */
+  .type-sample { background: var(--paper); border:1px solid var(--cloud); border-radius:14px; padding: 34px 36px; }
+  .type-row { display:flex; align-items:baseline; gap: 20px; padding: 14px 0; border-bottom: 1px dashed var(--cloud); }
+  .type-row:last-child { border-bottom: none; }
+  .type-row .meta { width: 150px; flex-shrink:0; font-size: 0.72rem; color: var(--muted); }
+  .type-row .meta code { color: var(--steel); }
+  .t-display { font-size: 3rem; font-weight: 800; letter-spacing: -0.03em; color: var(--ink); line-height:1; }
+  .t-h1 { font-size: 2.15rem; font-weight: 700; letter-spacing: -0.02em; color: var(--ink); }
+  .t-h2 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.015em; color: var(--ink); }
+  .t-h3 { font-size: 1.2rem; font-weight: 600; color: var(--ink); }
+  .t-body { font-size: 1.0625rem; font-weight: 400; color: var(--body); }
+  .t-eyebrow { font-size: 0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color: var(--steel); }
+  .weights { display:flex; flex-wrap:wrap; gap: 22px; margin-top: 24px; }
+  .weights div { text-align:center; }
+  .weights .g { font-size: 2.4rem; color: var(--ink); line-height:1; }
+  .weights small { font-size:0.72rem; color: var(--muted); display:block; margin-top:6px; }
+
+  /* Components ---------------------------------------------------------- */
+  .comp-grid { display:grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+  .comp-card { background: var(--paper); border:1px solid var(--cloud); border-radius: 14px; padding: 24px 26px; }
+  .comp-card > .label { font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); margin-bottom: 16px; }
+  .btn { font: inherit; font-weight:700; font-size:0.9rem; border:none; border-radius:6px; padding: 11px 22px; cursor:pointer; }
+  .btn-cta { background: var(--copper); color:#fff; }
+  .btn-cta:hover { background: var(--copper-deep); }
+  .btn-ghost { background: transparent; color: var(--steel); border:1px solid var(--steel); }
+  .btn-ghost:hover { background: var(--steel); color:#fff; }
+  .link-demo a { color: var(--steel); font-weight:600; text-decoration: none; border-bottom: 2px solid transparent; }
+  .link-demo a:hover { border-bottom-color: var(--copper); }
+  .card-demo { border:1px solid var(--cloud); border-radius:12px; overflow:hidden; box-shadow:0 2px 10px rgba(15,30,42,0.06); }
+  .card-demo .cimg { height: 90px; background: var(--gradient-cool); }
+  .card-demo .cbody { padding: 14px 16px; }
+  .card-demo .cbody h5 { font-size:0.98rem; color: var(--ink); margin-bottom:4px; }
+  .card-demo .cbody p { font-size:0.78rem; color: var(--muted); }
+
+  .callout { border-left: 4px solid; border-radius: 6px; padding: 12px 16px; margin-bottom: 12px; background: var(--mist); font-size: 0.88rem; }
+  .callout strong { color: var(--ink); }
+  .co-tip { border-color: var(--forest); }
+  .co-note { border-color: var(--slate); }
+  .co-heads { border-color: var(--copper); }
+  .co-warn { border-color: var(--burgundy); }
+
+  /* Voice -------------------------------------------------------------- */
+  .voice-grid { display:grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .voice-col { background: var(--paper); border:1px solid var(--cloud); border-radius:12px; padding: 22px 24px; }
+  .voice-col h4 { font-size:0.95rem; margin-bottom: 12px; display:flex; align-items:center; gap:8px; }
+  .voice-col.do h4 { color: var(--forest); }
+  .voice-col.dont h4 { color: var(--burgundy); }
+  .voice-col ul { list-style:none; }
+  .voice-col li { font-size:0.86rem; color: var(--body); padding: 7px 0 7px 24px; position:relative; line-height:1.5; }
+  .voice-col.do li::before { content:"\2713"; position:absolute; left:0; color: var(--forest); font-weight:800; }
+  .voice-col.dont li::before { content:"\2715"; position:absolute; left:0; color: var(--burgundy); font-weight:800; }
+
+  .fm { background: var(--ink); color:#cfe0ec; border-radius:12px; padding: 22px 24px; font-size: 0.82rem; overflow-x:auto; }
+  .fm .k { color: var(--sky); }
+  .fm .s { color: #d9a066; }
+  .fm .c { color: #6d8091; }
+
+  /* Quick ref ---------------------------------------------------------- */
+  .quickref { background: var(--ink); color: #dbe6ee; border-radius: 16px; padding: 34px 38px; }
+  .quickref h3 { color:#fff; font-size:1.2rem; margin-bottom: 20px; }
+  .qr-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 22px 30px; }
+  .qr-item .qh { font-size:0.66rem; text-transform:uppercase; letter-spacing:0.1em; color: rgba(255,255,255,0.45); margin-bottom:8px; }
+  .qr-item .qv { font-size:0.86rem; line-height:1.7; }
+  .qr-chip { display:inline-flex; align-items:center; gap:7px; }
+  .qr-chip .d { width:12px; height:12px; border-radius:3px; display:inline-block; }
+
+  footer { text-align:center; padding: 40px 0; color: var(--muted); font-size: 0.8rem; }
+
+  @media (max-width: 760px) {
+    .diverge, .comp-grid, .voice-grid { grid-template-columns: 1fr; }
+    .grad-row, .ph-grid { grid-template-columns: 1fr 1fr; }
+    .hero h1 { font-size: 2.4rem; }
+    .type-row { flex-direction: column; gap: 6px; }
+    .type-row .meta { width:auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO ---------------------------------------------------------------- -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-dots">
+      <span style="background:#0F1E2A"></span>
+      <span style="background:#3D6B8F"></span>
+      <span style="background:#6FB0D4"></span>
+      <span style="background:#B87333"></span>
+      <span style="background:#2E7D5A"></span>
+      <span style="background:#8B2E52"></span>
+      <span style="background:#5B5EA6"></span>
+      <span style="background:#6A8A7E"></span>
+    </div>
+    <h1>Wingate<span class="yr">365</span> Brand Bible</h1>
+    <p class="lead">Colour, typography, voice, and article conventions for the blog - a practical field notebook by a Microsoft MVP for Business Central.</p>
+    <div class="stamp">Figtree &nbsp;&middot;&nbsp; Steel Blue &amp; Copper &nbsp;&middot;&nbsp; v1.0</div>
+  </div>
+</header>
+
+<!-- PERSONALITY --------------------------------------------------------- -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">01 &middot; Who we are</span>
+    <h2 class="sec-title">Brand personality</h2>
+    <p class="sec-intro">Wingate365 is the personal blog of Andy Wingate. The tone is a practical field notebook: real problems, real fixes, written by a practitioner who has sat on both the customer and partner side of a Dynamics implementation.</p>
+    <div class="trait-grid">
+      <div class="trait"><h4>Practitioner, not marketer</h4><p>First person, hands-on. "Here is what I did and why." No sales language.</p></div>
+      <div class="trait"><h4>Clear over clever</h4><p>Short sentences, plain UK English. Explain the fix, then the context.</p></div>
+      <div class="trait"><h4>Warm and human</h4><p>The Copper accent is the visual signal of this - the spark that sets us apart from a cold corporate deck.</p></div>
+      <div class="trait"><h4>Authoritative, generous</h4><p>Confident because the experience is real, but always sharing, never gatekeeping.</p></div>
+      <div class="trait"><h4>Technical, current</h4><p>Business Central, Dynamics 365, Microsoft cloud - and the odd homelab or brewing detour.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIVERGENCE ---------------------------------------------------------- -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">02 &middot; The divergence</span>
+    <h2 class="sec-title">Not Venture</h2>
+    <p class="sec-intro">The blog once borrowed the Venture blues. Wingate365 is a personal brand and must read as its own thing. Two deliberate moves make the break: a warmer, deeper foundation, and a signature warm accent that Venture never uses.</p>
+    <div class="diverge">
+      <div class="col">
+        <div class="band"><div style="background:#12212E"></div><div style="background:#336687"></div></div>
+        <div class="txt">
+          <span class="tag tag-old">Legacy &middot; Venture</span>
+          <h4>All-cool blue</h4>
+          <p>Dark Blue #12212E and Mid Blue #336687. Corporate, consistent - but shared with the Venture identity.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="band"><div style="background:#0F1E2A"></div><div style="background:#3D6B8F"></div><div style="background:#B87333"></div></div>
+        <div class="txt">
+          <span class="tag tag-new">Wingate365</span>
+          <h4>Steel &amp; Copper</h4>
+          <p>Deeper Ink #0F1E2A, Steel Blue #3D6B8F as primary, and a warm Copper #B87333 signature. The one warm tone is the instant "this is Wingate365" cue.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PALETTE ------------------------------------------------------------- -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">03 &middot; Colour</span>
+    <h2 class="sec-title">The palette</h2>
+    <p class="sec-intro">A cool, authoritative foundation, one warm signature accent, and an extended semantic set drawn from the Precision colours for callouts, tags, and data.</p>
+
+    <h3 class="sub">Foundation</h3>
+    <div class="swatch-grid">
+      <div class="swatch"><div class="block" style="background:#0F1E2A"><span class="hex" style="color:rgba(255,255,255,0.6)">#0F1E2A</span></div><div class="info"><strong>Deep Ink</strong><code>--ink</code><span class="role">Darkest anchor. Headings, dark backgrounds, gradient start.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#3D6B8F"><span class="hex" style="color:rgba(255,255,255,0.75)">#3D6B8F</span></div><div class="info"><strong>Steel Blue</strong><code>--steel</code><span class="role">Primary brand blue. Links, active nav, labels.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#6FB0D4"><span class="hex" style="color:rgba(0,0,0,0.5)">#6FB0D4</span></div><div class="info"><strong>Sky</strong><code>--sky</code><span class="role">Bright readable blue. Dark-mode links, hover on dark.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#8CC7E3"><span class="hex" style="color:rgba(0,0,0,0.45)">#8CC7E3</span></div><div class="info"><strong>Mist Blue</strong><code>--mist-blue</code><span class="role">Subtle fills, quiet badges, text on dark panels.</span></div></div>
+    </div>
+
+    <h3 class="sub">Signature accent - use sparingly</h3>
+    <div class="swatch-grid">
+      <div class="swatch"><div class="block" style="background:#B87333"><span class="hex" style="color:rgba(255,255,255,0.8)">#B87333</span></div><div class="info"><strong>Copper</strong><code>--copper</code><span class="role">Signature accent. CTAs, "read more", emphasis underlines.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#9A5E27"><span class="hex" style="color:rgba(255,255,255,0.8)">#9A5E27</span></div><div class="info"><strong>Copper Deep</strong><code>--copper-deep</code><span class="role">Hover and pressed state for Copper elements.</span></div></div>
+    </div>
+
+    <h3 class="sub">Extended &amp; semantic (Precision set)</h3>
+    <div class="swatch-grid">
+      <div class="swatch"><div class="block" style="background:#2E7D5A"><span class="hex" style="color:rgba(255,255,255,0.8)">#2E7D5A</span></div><div class="info"><strong>Forest</strong><span class="role">Success, tips, what worked, RAG green.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#8B2E52"><span class="hex" style="color:rgba(255,255,255,0.8)">#8B2E52</span></div><div class="info"><strong>Burgundy</strong><span class="role">Warnings, gotchas, breaking changes, RAG red.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#5B5EA6"><span class="hex" style="color:rgba(255,255,255,0.85)">#5B5EA6</span></div><div class="info"><strong>Slate</strong><span class="role">Info, notes, side commentary, secondary accent.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#6A8A7E"><span class="hex" style="color:rgba(255,255,255,0.8)">#6A8A7E</span></div><div class="info"><strong>Sage</strong><span class="role">Muted, quiet callouts, secondary data.</span></div></div>
+    </div>
+
+    <h3 class="sub">Neutrals</h3>
+    <div class="swatch-grid">
+      <div class="swatch"><div class="block" style="background:#FFFFFF; border-bottom:1px solid #E2E8EE"><span class="hex" style="color:rgba(0,0,0,0.4)">#FFFFFF</span></div><div class="info"><strong>Paper</strong><span class="role">Page background (light).</span></div></div>
+      <div class="swatch"><div class="block" style="background:#F4F7FA"><span class="hex" style="color:rgba(0,0,0,0.4)">#F4F7FA</span></div><div class="info"><strong>Mist</strong><span class="role">Panels, cards, code blocks.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#E2E8EE"><span class="hex" style="color:rgba(0,0,0,0.45)">#E2E8EE</span></div><div class="info"><strong>Cloud</strong><span class="role">Borders and dividers.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#1A2530"><span class="hex" style="color:rgba(255,255,255,0.6)">#1A2530</span></div><div class="info"><strong>Body Text</strong><span class="role">Paragraph text on light.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#5A6B78"><span class="hex" style="color:rgba(255,255,255,0.75)">#5A6B78</span></div><div class="info"><strong>Muted</strong><span class="role">Meta, captions, secondary text.</span></div></div>
+      <div class="swatch"><div class="block" style="background:#0E1720"><span class="hex" style="color:rgba(255,255,255,0.6)">#0E1720</span></div><div class="info"><strong>Night</strong><span class="role">Page background (dark mode).</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GRADIENTS ----------------------------------------------------------- -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">04 &middot; Gradients &amp; heroes</span>
+    <h2 class="sec-title">Gradients</h2>
+    <p class="sec-intro">The primary gradient is the hero identity. Never present Wingate365 using the old Venture gradient.</p>
+    <div class="grad-row">
+      <div class="grad"><div class="fill" style="background:linear-gradient(135deg,#0F1E2A 0%,#3D6B8F 100%)"></div><div class="lbl"><strong>Primary</strong><code>135deg, #0F1E2A &rarr; #3D6B8F</code></div></div>
+      <div class="grad"><div class="fill" style="background:linear-gradient(135deg,#3D6B8F 0%,#6FB0D4 100%)"></div><div class="lbl"><strong>Cool</strong><code>135deg, #3D6B8F &rarr; #6FB0D4</code></div></div>
+      <div class="grad"><div class="fill" style="background:linear-gradient(90deg,#3D6B8F,#B87333)"></div><div class="lbl"><strong>Signature band</strong><code>90deg, #3D6B8F &rarr; #B87333</code></div></div>
+    </div>
+
+    <h3 class="sub">Hero placeholder gradients</h3>
+    <p class="sec-intro" style="margin-bottom:8px">Used when a post has no hero image - a branded card with monogram and wordmark.</p>
+    <div class="ph-grid">
+      <div class="ph" style="background:linear-gradient(135deg,#0F1E2A,#3D6B8F)"><span class="mono-w">W</span><span class="wm">WINGATE365</span></div>
+      <div class="ph" style="background:linear-gradient(135deg,#3D6B8F,#6FB0D4)"><span class="mono-w">W</span><span class="wm">WINGATE365</span></div>
+      <div class="ph" style="background:linear-gradient(135deg,#3D6B8F,#5B5EA6)"><span class="mono-w">W</span><span class="wm">WINGATE365</span></div>
+      <div class="ph" style="background:linear-gradient(135deg,#2E7D5A,#6A8A7E)"><span class="mono-w">W</span><span class="wm">WINGATE365</span></div>
+      <div class="ph" style="background:linear-gradient(135deg,#5A3A1C,#B87333)"><span class="mono-w">W</span><span class="wm">WINGATE365</span></div>
+      <div class="ph" style="background:linear-gradient(135deg,#8B2E52,#5B5EA6)"><span class="mono-w">W</span><span class="wm">WINGATE365</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPOGRAPHY ---------------------------------------------------------- -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">05 &middot; Type</span>
+    <h2 class="sec-title">Typography - Figtree</h2>
+    <p class="sec-intro">Figtree does everything: display, headings, body, and UI. Code uses a system mono stack. Never introduce a second display typeface.</p>
+    <div class="type-sample">
+      <div class="type-row"><div class="meta">Display &middot; 800<br><code>-0.03em</code></div><div class="t-display">Business Central</div></div>
+      <div class="type-row"><div class="meta">H1 &middot; 700<br><code>-0.02em</code></div><div class="t-h1">Fixing email for guest users</div></div>
+      <div class="type-row"><div class="meta">H2 &middot; 700</div><div class="t-h2">The problem and the fix</div></div>
+      <div class="type-row"><div class="meta">H3 &middot; 600</div><div class="t-h3">Step one: check the account type</div></div>
+      <div class="type-row"><div class="meta">Body &middot; 400<br><code>1.0625rem / 1.7</code></div><div class="t-body">I hit this error on a fresh tenant and spent an hour on it, so here is the short version for the next person searching.</div></div>
+      <div class="type-row"><div class="meta">Eyebrow &middot; 700<br><code>0.1em caps</code></div><div class="t-eyebrow">Dynamics 365</div></div>
+    </div>
+    <div class="weights">
+      <div><div class="g" style="font-weight:400">Aa</div><small>400 Regular</small></div>
+      <div><div class="g" style="font-weight:500">Aa</div><small>500 Medium</small></div>
+      <div><div class="g" style="font-weight:600">Aa</div><small>600 Semibold</small></div>
+      <div><div class="g" style="font-weight:700">Aa</div><small>700 Bold</small></div>
+      <div><div class="g" style="font-weight:800">Aa</div><small>800 Extrabold</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPONENTS ---------------------------------------------------------- -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">06 &middot; Components</span>
+    <h2 class="sec-title">UI patterns</h2>
+    <p class="sec-intro">Steel Blue carries links and primary UI. Copper is reserved for calls to action and emphasis. Every surface supports light and dark.</p>
+    <div class="comp-grid">
+      <div class="comp-card">
+        <div class="label">Buttons</div>
+        <button class="btn btn-cta">Read the post &rarr;</button>
+        &nbsp;
+        <button class="btn btn-ghost">Secondary</button>
+        <p style="font-size:0.78rem;color:var(--muted);margin-top:14px">Copper CTA for the primary action, Steel ghost for secondary.</p>
+      </div>
+      <div class="comp-card">
+        <div class="label">Links &amp; emphasis</div>
+        <p class="link-demo" style="font-size:0.95rem">Here is <a href="#">a link in running text</a> - Steel Blue, underlining to Copper on hover.</p>
+      </div>
+      <div class="comp-card">
+        <div class="label">Post card</div>
+        <div class="card-demo">
+          <div class="cimg"></div>
+          <div class="cbody"><h5>Filtering for the current user</h5><p>Business Central &middot; 4 min read</p></div>
+        </div>
+      </div>
+      <div class="comp-card">
+        <div class="label">Semantic callouts</div>
+        <div class="callout co-tip"><strong>Tip:</strong> This is what worked for me.</div>
+        <div class="callout co-note"><strong>Note:</strong> Extra context worth knowing.</div>
+        <div class="callout co-heads"><strong>Heads up:</strong> A gotcha to watch for.</div>
+        <div class="callout co-warn"><strong>Warning:</strong> Breaking change or data loss.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VOICE --------------------------------------------------------------- -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">07 &middot; Voice</span>
+    <h2 class="sec-title">Writing &amp; content</h2>
+    <p class="sec-intro">First person, UK English, problem-first. Assume a competent reader who is short on time. Lead with the problem or the answer, then the detail.</p>
+    <div class="voice-grid">
+      <div class="voice-col do">
+        <h4>Do</h4>
+        <ul>
+          <li>Write in first person - "I hit this, here is the fix".</li>
+          <li>Use plain UK English (colour, organise, licence).</li>
+          <li>Give plain, searchable titles that describe the task.</li>
+          <li>Break steps with H2 / H3 and fenced code blocks.</li>
+          <li>Credit sources and link out generously.</li>
+          <li>Give every post a hero - real or generated.</li>
+        </ul>
+      </div>
+      <div class="voice-col dont">
+        <h4>Do not</h4>
+        <ul>
+          <li>Use em dashes or en dashes - hyphens only.</li>
+          <li>Present the blog as the Venture blue identity.</li>
+          <li>Flood a layout with Copper - it is a spark.</li>
+          <li>Mix in a second display typeface.</li>
+          <li>Write clever puns for titles - people arrive from search.</li>
+          <li>Invent duplicate tags ("bc" vs "business central").</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="sub">Post front matter template</h3>
+    <div class="fm mono">
+<span class="c">---</span><br>
+<span class="k">title</span>: <span class="s">"Descriptive, searchable title"</span><br>
+<span class="k">date</span>: 2026-01-15T09:00:00Z<br>
+<span class="k">lastmod</span>: 2026-01-15T09:00:00Z<br>
+<span class="k">url</span>: <span class="s">"/2026/01/descriptive-searchable-title.html"</span><br>
+<span class="k">tags</span>: [<span class="s">"business central"</span>, <span class="s">"dynamics 365"</span>]<br>
+<span class="k">hero</span>: <span class="s">"https://.../image.jpg"</span> &nbsp;<span class="c"># optional</span><br>
+<span class="k">author</span>: <span class="s">"Andy Wingate"</span><br>
+<span class="c">---</span>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK REF ----------------------------------------------------------- -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">08 &middot; At a glance</span>
+    <h2 class="sec-title">Quick reference</h2>
+    <div class="quickref">
+      <div class="qr-grid">
+        <div class="qr-item">
+          <div class="qh">Font</div>
+          <div class="qv">Figtree 400 / 500 / 600 / 700 / 800<br>System mono for code</div>
+        </div>
+        <div class="qr-item">
+          <div class="qh">Primary &amp; dark</div>
+          <div class="qv">
+            <span class="qr-chip"><span class="d" style="background:#3D6B8F"></span>Steel Blue #3D6B8F</span><br>
+            <span class="qr-chip"><span class="d" style="background:#0F1E2A"></span>Deep Ink #0F1E2A</span>
+          </div>
+        </div>
+        <div class="qr-item">
+          <div class="qh">Signature</div>
+          <div class="qv"><span class="qr-chip"><span class="d" style="background:#B87333"></span>Copper #B87333</span><br><span style="color:rgba(255,255,255,0.5)">hover #9A5E27 &middot; dark #CF8A4A</span></div>
+        </div>
+        <div class="qr-item">
+          <div class="qh">Semantic</div>
+          <div class="qv">
+            <span class="qr-chip"><span class="d" style="background:#2E7D5A"></span>Success</span> &nbsp;
+            <span class="qr-chip"><span class="d" style="background:#8B2E52"></span>Warning</span><br>
+            <span class="qr-chip"><span class="d" style="background:#5B5EA6"></span>Info</span> &nbsp;
+            <span class="qr-chip"><span class="d" style="background:#6A8A7E"></span>Muted</span>
+          </div>
+        </div>
+        <div class="qr-item">
+          <div class="qh">Gradient</div>
+          <div class="qv mono" style="font-size:0.78rem">linear-gradient(135deg,<br>#0F1E2A, #3D6B8F)</div>
+        </div>
+        <div class="qr-item">
+          <div class="qh">Voice</div>
+          <div class="qv">First person, UK English, problem-first, practical, no dashes.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Wingate365 Brand Bible &middot; full written reference in <code>BRAND-GUIDE.md</code>
+</footer>
+
+</body>
+</html>

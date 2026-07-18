@@ -15,15 +15,19 @@
   </div>
   {{- end }}
 
-  {{- $tags := .Site.Taxonomies.tags }}
+  {{- $tags := .Site.Taxonomies.tags.ByCount }}
   {{- if $tags }}
+  {{- $limit := 14 }}
   <div class="widget">
     <h2 class="widget-title">Tags</h2>
-    <ul class="widget-tags">
-      {{- range $name, $pages := $tags }}
-      <li><a class="tag-pill sm" href="{{ (printf "/tags/%s" ($name | urlize)) | relURL }}">{{ $name }} <span class="tag-count">{{ len $pages }}</span></a></li>
+    <ul class="widget-tags" id="tag-cloud">
+      {{- range $i, $t := $tags }}
+      <li{{ if ge $i $limit }} class="tag-extra" hidden{{ end }}><a class="tag-pill sm" href="{{ (printf "/tags/%s" ($t.Name | urlize)) | relURL }}">{{ $t.Name }} <span class="tag-count">{{ $t.Count }}</span></a></li>
       {{- end }}
     </ul>
+    {{- if gt (len $tags) $limit }}
+    <button type="button" class="tag-showall" id="tag-showall" aria-expanded="false" data-total="{{ len $tags }}">Show all {{ len $tags }}</button>
+    {{- end }}
   </div>
   {{- end }}
 
@@ -39,3 +43,16 @@
   {{- end }}
 
 </aside>
+
+<script>
+  (function () {
+    var btn = document.getElementById('tag-showall');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      document.querySelectorAll('#tag-cloud .tag-extra').forEach(function (el) { el.hidden = open; });
+      btn.setAttribute('aria-expanded', String(!open));
+      btn.textContent = open ? ('Show all ' + btn.dataset.total) : 'Show less';
+    });
+  })();
+</script>
