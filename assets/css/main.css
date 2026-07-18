@@ -145,6 +145,37 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
 }
 .site-nav a:hover, .site-nav a.active { color: var(--accent); text-decoration: none; }
 
+/* Burger toggle - hidden on desktop, shown at the mobile breakpoint */
+.nav-toggle {
+  display: none;
+  border: 1px solid var(--border);
+  background: var(--bg-subtle);
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+.nav-toggle-bars,
+.nav-toggle-bars::before,
+.nav-toggle-bars::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--heading);
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.nav-toggle-bars { position: relative; }
+.nav-toggle-bars::before { position: absolute; top: -6px; left: 0; }
+.nav-toggle-bars::after { position: absolute; top: 6px; left: 0; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars { background: transparent; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars::before { transform: translateY(6px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars::after { transform: translateY(-6px) rotate(-45deg); }
+
 .theme-toggle {
   border: 1px solid var(--border);
   background: var(--bg-subtle);
@@ -852,12 +883,41 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
   .archive-main { grid-column: 1; grid-row: auto; }
 }
 
+@media (max-width: 48rem) {
+  .header-inner { position: relative; }
+  .nav-toggle { display: inline-flex; }
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    padding: 0.5rem 0;
+    box-shadow: var(--shadow);
+  }
+  .site-nav.open { display: flex; }
+  .site-nav a {
+    padding: 0.7rem 1.15rem;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .search { padding: 0.6rem 1.15rem; }
+  .search-input, .search-input:focus { width: 100%; }
+  .search-icon { left: 1.7rem; }
+  #theme-toggle { margin: 0.5rem 1.15rem; }
+}
+
 @media (max-width: 34rem) {
   body { font-size: 1rem; }
   .brand-tagline { display: none; }
   .brand-name { font-size: 1.35rem; }
-  .site-nav { gap: 0.75rem; }
-  .site-nav a { font-size: 0.85rem; }
   .post-title { font-size: 1.7rem; }
   .home-title { font-size: 1.6rem; }
   .post-card.has-thumb { grid-template-columns: 1fr; gap: 0.75rem; }

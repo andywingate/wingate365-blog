@@ -4,7 +4,10 @@
       <span class="brand-name">Wingate<span class="brand-365">365</span></span>
       {{- with .Site.Params.subtitle }}<span class="brand-tagline">{{ . }}</span>{{ end }}
     </a>
-    <nav class="site-nav" aria-label="Primary">
+    <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
       {{- range .Site.Menus.main }}
       {{- $url := .URL | relLangURL }}
       {{- with .Page }}{{ $url = .RelPermalink }}{{ end }}
