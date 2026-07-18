@@ -40,6 +40,12 @@
 {{- $css := resources.Get "css/main.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
+{{- with .Site.Params.analytics.goatcounter }}
+{{- if not hugo.IsServer }}
+<script data-goatcounter="{{ . }}" async src="https://gc.zgo.at/count.js"></script>
+{{- end }}
+{{- end }}
+
 <script>
   (function () {
     var stored = localStorage.getItem('theme');
