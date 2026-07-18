@@ -1,4 +1,4 @@
-$posts = Get-ChildItem "c:\git\wingate365-blog\content\posts\*.md"
+﻿$posts = Get-ChildItem "c:\git\wingate365-blog\content\posts\*.md"
 $rx = '(?s)^\s*<table[^>]*class="tr-caption-container"[^>]*>\s*<tbody>\s*<tr>\s*<td[^>]*>\s*</td>\s*</tr>\s*<tr>\s*<td class="tr-caption"[^>]*>(.*?)</td>\s*</tr>\s*</tbody>\s*</table>'
 foreach ($p in $posts) {
     $raw = Get-Content $p.FullName -Raw
