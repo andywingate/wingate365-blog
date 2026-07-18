@@ -22,7 +22,7 @@
     <h2 class="widget-title">Tags</h2>
     <ul class="widget-tags" id="tag-cloud">
       {{- range $i, $t := $tags }}
-      <li{{ if ge $i $limit }} class="tag-extra" hidden{{ end }}><a class="tag-pill sm" href="{{ (printf "/tags/%s" ($t.Name | urlize)) | relURL }}">{{ $t.Name }} <span class="tag-count">{{ $t.Count }}</span></a></li>
+      <li{{ if ge $i $limit }} class="tag-extra" hidden{{ end }}><a class="tag-pill sm" href="{{ $t.Page.RelPermalink }}">{{ $t.Name }} <span class="tag-count">{{ $t.Count }}</span></a></li>
       {{- end }}
     </ul>
     {{- if gt (len $tags) $limit }}

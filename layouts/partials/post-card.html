@@ -11,7 +11,7 @@
     {{- with .Params.tags }}
     <ul class="post-card-tags">
       {{- range first 4 . }}
-      <li><a class="tag-pill sm" href="{{ (printf "/tags/%s" (. | urlize)) | relURL }}">{{ . }}</a></li>
+      <li><a class="tag-pill sm" href="{{ (printf "tags/%s/" (. | urlize)) | relLangURL }}">{{ . }}</a></li>
       {{- end }}
     </ul>
     {{- end }}

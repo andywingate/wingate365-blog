@@ -14,7 +14,7 @@
     {{- with .Params.tags }}
     <ul class="post-tags">
       {{- range . }}
-      <li><a class="tag-pill" href="{{ (printf "/tags/%s" (. | urlize)) | relURL }}">{{ . }}</a></li>
+      <li><a class="tag-pill" href="{{ (printf "tags/%s/" (. | urlize)) | relLangURL }}">{{ . }}</a></li>
       {{- end }}
     </ul>
     {{- end }}
@@ -27,7 +27,7 @@
   {{ partial "linkedin-discuss.html" . }}
 
   <footer class="post-footer">
-    <a class="back-link" href="{{ "/posts" | relURL }}">&larr; All posts</a>
+    <a class="back-link" href="{{ "posts/" | relLangURL }}">&larr; All posts</a>
   </footer>
 </article>
 </div>
