@@ -27,6 +27,15 @@
   --pre-text: #e8eef2;
   --shadow: 0 1px 2px rgba(15, 30, 42, 0.06), 0 4px 12px rgba(15, 30, 42, 0.04);
   --selection: #cfe7fb;
+
+  /* Signature brand gradient (deep ink -> BC azure -> cyan) */
+  --brand-gradient: linear-gradient(135deg, #0f1e2a 0%, #0b71c7 55%, #37bef3 100%);
+  /* Wordmark gradient starts from the heading colour so it stays legible per-theme */
+  --brand-wordmark: linear-gradient(100deg, var(--heading) 0%, #0b71c7 62%, #37bef3 100%);
+  /* Secondary non-blue accent (Forest) - the personal-brand spark on every page */
+  --accent-2: #2e7d5a;
+  /* Header underline strip: brand blue resolving into the green spark */
+  --brand-strip: linear-gradient(90deg, #0f1e2a 0%, #0b71c7 32%, #37bef3 64%, var(--accent-2) 100%);
 }
 
 [data-theme="dark"] {
@@ -45,6 +54,8 @@
   --pre-text: #d7e0e7;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 18px rgba(0, 0, 0, 0.3);
   --selection: #0d466f;
+  /* Brighter green spark for legibility on the dark canvas */
+  --accent-2: #3fa876;
 }
 
 /* Reset ------------------------------------------------------------------- */
@@ -96,6 +107,16 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
   z-index: 20;
   backdrop-filter: saturate(180%) blur(6px);
 }
+/* Thin signature gradient strip along the foot of the sticky header */
+.site-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 3px;
+  background: var(--brand-strip);
+}
 .header-inner {
   display: flex;
   align-items: center;
@@ -113,6 +134,7 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
   color: var(--heading);
   letter-spacing: -0.02em;
 }
+.brand-365 { color: var(--accent); }
 .brand-tagline { font-size: 0.78rem; color: var(--text-muted); font-weight: 500; margin-top: 1px; }
 
 .site-nav { display: flex; align-items: center; gap: 1.1rem; }
@@ -265,7 +287,7 @@ h1, h2, h3, h4 {
   letter-spacing: 0.08em;
   font-weight: 700;
   color: #fff;
-  background: var(--accent);
+  background: #2e7d5a;
   padding: 0.2rem 0.65rem;
   border-radius: 999px;
   margin-bottom: 0.7rem;
@@ -406,6 +428,15 @@ h1, h2, h3, h4 {
   background: var(--bg-subtle);
   border-radius: 0 6px 6px 0;
 }
+.post-content .post-note {
+  margin: 0 0 1.5rem;
+  padding: 0.85rem 1.1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--bg-subtle);
+  color: var(--text);
+  border-radius: 0 8px 8px 0;
+}
+.post-content .post-note a { color: var(--accent); }
 .post-content hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
 .post-content a { text-decoration: underline; text-underline-offset: 2px; }
 

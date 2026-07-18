@@ -10,7 +10,7 @@ author: "Andy Wingate"
 <p></p><div style="text-align: center;"><span style="text-align: left;">&nbsp;</span></div><p></p>
 
 
-<div style="background: rgb(232, 244, 253); border-left: 4px solid rgb(26, 115, 232); margin: 0px 0px 24px; padding: 12px 16px;">
+<div class="post-note">
   <strong>Previous post in this series:</strong> <a href="https://blog.wingate365.com/2026/04/fixing-email-for-guest-users-in-d365.html">Fixing Email for Guest Users in D365 Business Central</a>
 </div>
 
