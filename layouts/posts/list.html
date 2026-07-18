@@ -31,14 +31,11 @@
         {{- range .Pages.GroupByDate "January" }}
         <div class="archive-month" id="m-{{ (index .Pages 0).Date.Format "2006-01" }}">
           <h3 class="archive-month-heading">{{ .Key }}</h3>
-          <ul class="archive-posts">
+          <div class="post-list">
             {{- range .Pages }}
-            <li>
-              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan" }}</time>
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </li>
+              {{ partial "post-card.html" . }}
             {{- end }}
-          </ul>
+          </div>
         </div>
         {{- end }}
       </section>

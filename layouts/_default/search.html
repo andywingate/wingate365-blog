@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="container">
+  <header class="page-header">
+    <h1 class="page-title" id="search-page-title">Search</h1>
+    <p class="muted" id="search-page-count"></p>
+  </header>
+
+  <section class="post-list" id="search-page-results" data-index="{{ "index.json" | relURL }}" data-base="{{ "/" | relLangURL }}"></section>
+
+  <noscript><p class="muted">Search requires JavaScript. Browse the <a href="{{ "posts/" | relLangURL }}">posts archive</a> instead.</p></noscript>
+</div>
+{{ end }}

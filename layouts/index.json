@@ -7,6 +7,7 @@
     "tags" (or .Params.tags slice)
     "summary" (.Summary | plainify | htmlUnescape)
     "content" (.Plain | truncate 1500)
+    "thumb" (partial "post-thumb.html" . | string)
   ) -}}
 {{- end -}}
 {{- $index | jsonify -}}
