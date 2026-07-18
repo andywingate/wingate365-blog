@@ -29,7 +29,9 @@
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $siteTitle }}">
 {{- end }}
 
-<link rel="icon" href="{{ "favicon.ico" | relURL }}">
+<link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
+<link rel="icon" type="image/png" sizes="256x256" href="{{ "favicon-256.png" | relURL }}">
+<link rel="apple-touch-icon" href="{{ "favicon-256.png" | relURL }}">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

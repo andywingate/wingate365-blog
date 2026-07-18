@@ -18,7 +18,7 @@ enableGitInfo = false
   tag = "tags"
 
 [pagination]
-  pagerSize = 10
+  pagerSize = 6
 
 [params]
   description = "Business Central, Dynamics 365, Microsoft cloud and technology notes by Andy Wingate."

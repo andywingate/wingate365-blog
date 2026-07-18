@@ -61,8 +61,8 @@ Hugo is installed via winget but is not on PATH by default. Prepend it for the s
 
 ```powershell
 $env:Path = "$env:LOCALAPPDATA\Microsoft\WinGet\Packages\Hugo.Hugo.Extended_Microsoft.Winget.Source_8wekyb3d8bbwe;" + $env:Path
-hugo server --disableFastRender          # local preview at http://localhost:1313 (shows drafts with -D)
-hugo --gc --minify                       # production build into public/
+hugo server --disableFastRender -D       # local preview at http://localhost:1313 (-D includes drafts)
+hugo --gc --minify                       # production build into public/ (drafts excluded)
 ```
 
 To scaffold a new post with the correct front matter:
