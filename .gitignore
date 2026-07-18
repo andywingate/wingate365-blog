@@ -7,3 +7,6 @@
 .DS_Store
 Thumbs.db
 *.swp
+
+# Claude Code local config
+/.claude/
