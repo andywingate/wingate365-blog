@@ -525,8 +525,69 @@
       <div class="grad"><div class="fill" style="background:linear-gradient(90deg,#0B71C7,#37BEF3)"></div><div class="lbl"><strong>Signature band</strong><code>90deg, #0B71C7 &rarr; #37BEF3</code></div></div>
     </div>
 
+    <h3 class="sub">Hero images - logo-led</h3>
+    <p class="sec-intro" style="margin-bottom:14px">The go-to hero is the <strong>logo (or logos) of the tools the post is about</strong>, set on the bold BC gradient. It reads instantly, stays on brand, and reshares cleanly on LinkedIn. Logos are the hero - keep text out of the image; the post title sits above it on the page.</p>
+
+    <div style="display:grid; grid-template-columns:1fr; gap:18px; max-width:760px;">
+      <figure style="margin:0;">
+        <div style="border-radius:12px; overflow:hidden; box-shadow:0 2px 12px rgba(15,30,42,0.14);">
+          <img src="/images/heroes/blogger-to-github.svg" alt="Blogger to GitHub logo hero" style="display:block; width:100%; height:auto;">
+        </div>
+        <figcaption style="font-size:0.78rem; color:var(--muted); margin-top:8px;">Two-logo "A &rarr; B" layout - the migration / comparison hero. Blogger &rarr; GitHub.</figcaption>
+      </figure>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:28px;">
+      <div>
+        <h4 style="font-size:0.95rem; color:var(--ink); margin-bottom:10px;">The rules</h4>
+        <ul style="list-style:none; font-size:0.86rem; line-height:1.5;">
+          <li style="padding:6px 0 6px 22px; position:relative;"><span style="position:absolute; left:0; color:var(--forest); font-weight:800;">&#10003;</span> One logo for a single-tool post; two logos (<code>A &rarr; B</code>) for a migration or comparison.</li>
+          <li style="padding:6px 0 6px 22px; position:relative;"><span style="position:absolute; left:0; color:var(--forest); font-weight:800;">&#10003;</span> Bold BC gradient background (Deep Ink &rarr; Azure &rarr; Cyan); logos on white chips.</li>
+          <li style="padding:6px 0 6px 22px; position:relative;"><span style="position:absolute; left:0; color:var(--forest); font-weight:800;">&#10003;</span> Big logos - they should dominate the frame.</li>
+          <li style="padding:6px 0 6px 22px; position:relative;"><span style="position:absolute; left:0; color:var(--forest); font-weight:800;">&#10003;</span> Faint WINGATE365 watermark, bottom-right, and nothing else.</li>
+          <li style="padding:6px 0 6px 22px; position:relative;"><span style="position:absolute; left:0; color:var(--burgundy); font-weight:800;">&#10007;</span> No headline, eyebrow, or descriptive text baked into the image.</li>
+          <li style="padding:6px 0 6px 22px; position:relative;"><span style="position:absolute; left:0; color:var(--burgundy); font-weight:800;">&#10007;</span> No decorative green bar - the watermark is the only chrome.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-size:0.95rem; color:var(--ink); margin-bottom:10px;">How to generate one</h4>
+        <p style="font-size:0.84rem; color:var(--muted); margin-bottom:10px;">Authored 1200&times;630 (also the social/OG size). Brand marks are pulled from <a href="https://simple-icons.org" style="color:var(--steel);">Simple Icons</a> (CC0) and embedded, so the file is self-contained. Run from the repo:</p>
+        <div class="fm mono" style="font-size:0.78rem;">
+<span class="c"># two-logo migration hero</span><br>
+./scripts/new-hero.ps1 <span class="k">-Slug</span> <span class="s">blogger-to-github</span> <span class="k">-Icon</span> <span class="s">blogger,github</span><br><br>
+<span class="c"># single-tool hero</span><br>
+./scripts/new-hero.ps1 <span class="k">-Slug</span> <span class="s">power-automate-tips</span> <span class="k">-Icon</span> <span class="s">microsoftpowerautomate</span>
+        </div>
+        <p style="font-size:0.84rem; color:var(--muted); margin-top:10px;">Then set <code>hero: "/images/heroes/&lt;slug&gt;.svg"</code> in the post front matter. Find icon slugs at simple-icons.org. A <code>-Theme light</code> option exists for the rare post that wants a clean near-white background instead.</p>
+      </div>
+    </div>
+
+    <h3 class="sub">Hero palettes</h3>
+    <p class="sec-intro" style="margin-bottom:14px">Pass <code>-Palette</code> to pick the gradient. Three-colour palettes anchor on Deep Ink and travel to a bright end; two-colour palettes are simpler and quieter. <strong>blue</strong> is the default signature.</p>
+
+    <p style="font-size:0.8rem; font-weight:700; color:var(--steel); text-transform:uppercase; letter-spacing:0.06em; margin:0 0 10px;">Three-colour</p>
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:22px;">
+      <div><div style="height:80px; border-radius:8px; background:linear-gradient(135deg,#0F1E2A,#0B71C7 55%,#37BEF3);"></div><div style="font-size:0.8rem; font-weight:700; margin-top:7px;">blue</div><div style="font-size:0.72rem; color:var(--muted);">Ink &rarr; Azure &rarr; Cyan</div></div>
+      <div><div style="height:80px; border-radius:8px; background:linear-gradient(135deg,#0F1E2A,#5B5EA6 55%,#37BEF3);"></div><div style="font-size:0.8rem; font-weight:700; margin-top:7px;">aurora</div><div style="font-size:0.72rem; color:var(--muted);">Ink &rarr; Slate &rarr; Cyan</div></div>
+      <div><div style="height:80px; border-radius:8px; background:linear-gradient(135deg,#0F1E2A,#3D6B8F 55%,#2E7D5A);"></div><div style="font-size:0.8rem; font-weight:700; margin-top:7px;">teal</div><div style="font-size:0.72rem; color:var(--muted);">Ink &rarr; Steel &rarr; Forest</div></div>
+      <div><div style="height:80px; border-radius:8px; background:linear-gradient(135deg,#0F1E2A,#8B2E52 55%,#C77D1A);"></div><div style="font-size:0.8rem; font-weight:700; margin-top:7px;">dusk</div><div style="font-size:0.72rem; color:var(--muted);">Ink &rarr; Burgundy &rarr; Amber</div></div>
+    </div>
+
+    <p style="font-size:0.8rem; font-weight:700; color:var(--steel); text-transform:uppercase; letter-spacing:0.06em; margin:0 0 10px;">Two-colour</p>
+    <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:14px;">
+      <div><div style="height:72px; border-radius:8px; background:linear-gradient(135deg,#0B71C7,#37BEF3);"></div><div style="font-size:0.8rem; font-weight:700; margin-top:7px;">azure</div><div style="font-size:0.72rem; color:var(--muted);">Azure &rarr; Cyan</div></div>
+      <div><div style="height:72px; border-radius:8px; background:linear-gradient(135deg,#0F1E2A,#3D6B8F);"></div><div style="font-size:0.8rem; font-weight:700; margin-top:7px;">ink</div><div style="font-size:0.72rem; color:var(--muted);">Ink &rarr; Steel</div></div>
+      <div><div style="height:72px; border-radius:8px; background:linear-gradient(135deg,#3D6B8F,#5B5EA6);"></div><div style="font-size:0.8rem; font-weight:700; margin-top:7px;">steel</div><div style="font-size:0.72rem; color:var(--muted);">Steel &rarr; Slate</div></div>
+      <div><div style="height:72px; border-radius:8px; background:linear-gradient(135deg,#2E7D5A,#6A8A7E);"></div><div style="font-size:0.8rem; font-weight:700; margin-top:7px;">forest</div><div style="font-size:0.72rem; color:var(--muted);">Forest &rarr; Sage</div></div>
+      <div><div style="height:72px; border-radius:8px; background:linear-gradient(135deg,#8B2E52,#5B5EA6);"></div><div style="font-size:0.8rem; font-weight:700; margin-top:7px;">burgundy</div><div style="font-size:0.72rem; color:var(--muted);">Burgundy &rarr; Slate</div></div>
+    </div>
+
+    <div class="fm mono" style="font-size:0.78rem; margin-top:18px;">
+./scripts/new-hero.ps1 <span class="k">-Slug</span> <span class="s">my-post</span> <span class="k">-Icon</span> <span class="s">blogger,github</span> <span class="k">-Palette</span> <span class="s">teal</span>
+    </div>
+
     <h3 class="sub">Hero placeholder gradients</h3>
-    <p class="sec-intro" style="margin-bottom:8px">Used when a post has no hero image - a branded card with monogram and wordmark.</p>
+    <p class="sec-intro" style="margin-bottom:8px">The automatic fallback when a post has no hero image - a branded card with monogram and wordmark.</p>
     <div class="ph-grid">
       <div class="ph" style="background:linear-gradient(135deg,#0F1E2A,#0B71C7)"><span class="mono-w">W</span><span class="wm">WINGATE365</span></div>
       <div class="ph" style="background:linear-gradient(135deg,#0B71C7,#37BEF3)"><span class="mono-w">W</span><span class="wm">WINGATE365</span></div>

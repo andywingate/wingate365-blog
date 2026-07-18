@@ -39,7 +39,7 @@ Rules for each key:
 - **title** - quoted string, Title Case. No trailing site name.
 - **date** / **lastmod** - RFC3339 with `Z` (UTC), e.g. `2026-07-18T09:00:00Z`. `lastmod` may equal `date` on first publish.
 - **tags** - array of lowercase, short tags. Reuse existing tags where possible (see below). No `images` tag.
-- **hero** - optional image URL or local path. Leave `""` to auto-generate a branded gradient placeholder. If set, provide a real image; optionally set **heroCaption**.
+- **hero** - optional image URL or local path. Andy's go-to hero is the logo(s) of the tools the post covers, generated on-brand with `scripts/new-hero.ps1` (writes to `static/images/heroes/<slug>.svg`; set `hero: "/images/heroes/<slug>.svg"`). See the "Hero images - logo-led" section of `static/brand-guide.html`. Leave `""` to auto-generate a branded gradient placeholder. If set to a real image, optionally set **heroCaption**.
 - **author** - always `"Andy Wingate"`.
 - **linkedin** - optional. A clean LinkedIn post URL (strip query string and trailing slash) to render the "Join the conversation" card at the foot of the post.
 - **draft** - `true` while writing (excluded from normal builds). Set to `false` or remove when ready to publish.
@@ -78,7 +78,7 @@ This uses `archetypes/posts.md`.
 1. `draft` removed or set to `false`.
 2. `date` / `lastmod` correct; filename `YYYY-MM` matches the date.
 3. Tags reuse existing vocabulary, all lowercase.
-4. `hero` is either a real image URL (with optional caption) or left `""` for a placeholder.
+4. `hero` is a generated logo hero (`scripts/new-hero.ps1` -> `/images/heroes/<slug>.svg`), a real image URL (with optional caption), or left `""` for a placeholder.
 5. `hugo --gc --minify` builds with no errors.
 6. Commit the `content/` change (plus any new `static/` image). Do not commit `public/` - it is gitignored and rebuilt by GitHub Actions on push.
 
