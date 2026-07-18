@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Font evaluation · Wingate365</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;600;700&family=Manrope:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&family=Lexend:wght@400;600;700&family=Outfit:wght@400;600;700&family=DM+Sans:wght@400;600;700&family=Work+Sans:wght@400;600;700&family=Figtree:wght@400;600;700&family=Hanken+Grotesk:wght@400;600;700&family=Albert+Sans:wght@400;600;700&family=Be+Vietnam+Pro:wght@400;600;700&family=IBM+Plex+Sans:wght@400;600;700&family=Archivo:wght@400;600;700&family=Red+Hat+Display:wght@400;600;700&family=Schibsted+Grotesk:wght@400;600;700&family=Onest:wght@400;600;700&family=Bricolage+Grotesque:wght@400;600;700&family=Instrument+Sans:wght@400;600;700&family=Fraunces:wght@400;600;700&family=Newsreader:wght@400;600;700&family=Source+Serif+4:wght@400;600;700&family=Lora:wght@400;600;700&family=Spectral:wght@400;600;700&display=swap">
+<style>
+  :root {
+    --bg: #ffffff; --bg-subtle: #f5f7fa; --bg-card: #ffffff;
+    --text: #1a2530; --text-muted: #5a6b78; --heading: #12212e;
+    --accent: #336687; --border: #e2e8ee;
+    --ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  [data-theme="dark"] {
+    --bg: #0e1720; --bg-subtle: #16232f; --bg-card: #16232f;
+    --text: #d7e0e7; --text-muted: #8fa3b1; --heading: #f1f6f9;
+    --accent: #6fb0d4; --border: #24333f;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--ui); transition: background .2s, color .2s; }
+
+  .bar {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--bg); border-bottom: 1px solid var(--border);
+    padding: 14px 24px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center;
+    backdrop-filter: saturate(180%) blur(6px);
+  }
+  .bar h1 { font-size: 1.05rem; margin: 0; color: var(--heading); }
+  .bar .grow { flex: 1; }
+  .bar label { font-size: .8rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 3px; }
+  .bar input[type="text"], .bar input[type="range"] { font: inherit; }
+  .bar input[type="text"] {
+    padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px;
+    background: var(--bg-subtle); color: var(--text); min-width: 260px;
+  }
+  .btn {
+    font: inherit; font-size: .85rem; font-weight: 600; cursor: pointer;
+    padding: 7px 14px; border-radius: 6px; border: 1px solid var(--border);
+    background: var(--bg-subtle); color: var(--text);
+  }
+  .btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+  .intro { padding: 18px 24px 0; color: var(--text-muted); max-width: 760px; }
+  .grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 18px; padding: 18px 24px 60px;
+  }
+  .card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px 22px; overflow: hidden;
+  }
+  .card-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px; }
+  .font-name { font-family: var(--ui); font-size: .95rem; font-weight: 700; color: var(--accent); }
+  .badges { display: flex; gap: 6px; }
+  .badge {
+    font-family: var(--ui); font-size: .65rem; text-transform: uppercase; letter-spacing: .05em;
+    font-weight: 700; color: var(--text-muted); background: var(--bg-subtle);
+    border: 1px solid var(--border); border-radius: 999px; padding: 2px 8px;
+  }
+  .pick {
+    font-family: var(--ui); font-size: .72rem; font-weight: 700; cursor: pointer;
+    border: 1px solid var(--accent); color: var(--accent); background: transparent;
+    border-radius: 6px; padding: 4px 10px;
+  }
+  .pick.chosen { background: var(--accent); color: #fff; }
+
+  .s-brand { font-size: 2rem; font-weight: 700; color: var(--heading); letter-spacing: -.02em; line-height: 1.1; margin: 0 0 2px; }
+  .s-tag { font-family: var(--ui); font-size: .72rem; color: var(--text-muted); margin-bottom: 14px; }
+  .s-title { font-size: 1.45rem; font-weight: 700; color: var(--heading); letter-spacing: -.015em; line-height: 1.25; margin: 0 0 8px; }
+  .s-meta { font-family: var(--ui); font-size: .8rem; color: var(--text-muted); margin-bottom: 8px; }
+  .s-body { font-size: 1.02rem; line-height: 1.6; margin: 0 0 12px; }
+  .s-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+  .s-pill {
+    font-size: .75rem; font-weight: 600; color: var(--accent);
+    background: var(--bg-subtle); border: 1px solid var(--border);
+    border-radius: 999px; padding: 2px 10px;
+  }
+  .note { font-family: var(--ui); font-size: .75rem; color: var(--text-muted); padding: 0 24px 40px; }
+</style>
+</head>
+<body>
+  <div class="bar">
+    <h1>Font evaluation</h1>
+    <label>Brand text
+      <input type="text" id="brandText" value="Wingate365">
+    </label>
+    <label>Heading text
+      <input type="text" id="titleText" value="Graph API email account types for D365">
+    </label>
+    <span class="grow"></span>
+    <button class="btn" id="themeBtn" type="button">Toggle dark</button>
+  </div>
+
+  <p class="intro">
+    Every font below is free and open-source (Google Fonts), safe for commercial use.
+    Edit the brand / heading text above to see your own words. When you find one you like,
+    click <strong>Use this</strong> (or just tell me the name) and I'll apply it to the blog:
+    headings + brand in the chosen font, body text stays highly readable.
+  </p>
+
+  <div class="grid" id="grid"></div>
+  <p class="note" id="chosenNote"></p>
+
+<script>
+  var fonts = [
+    { name: "Inter", type: "Sans" },
+    { name: "Space Grotesk", type: "Display", tag: "current" },
+    { name: "Sora", type: "Sans" },
+    { name: "Manrope", type: "Sans" },
+    { name: "Plus Jakarta Sans", type: "Sans" },
+    { name: "Lexend", type: "Sans" },
+    { name: "Outfit", type: "Sans" },
+    { name: "DM Sans", type: "Sans" },
+    { name: "Work Sans", type: "Sans" },
+    { name: "Figtree", type: "Sans" },
+    { name: "Hanken Grotesk", type: "Sans" },
+    { name: "Albert Sans", type: "Sans" },
+    { name: "Be Vietnam Pro", type: "Sans" },
+    { name: "IBM Plex Sans", type: "Sans" },
+    { name: "Archivo", type: "Sans" },
+    { name: "Red Hat Display", type: "Display" },
+    { name: "Schibsted Grotesk", type: "Grotesk" },
+    { name: "Onest", type: "Sans" },
+    { name: "Bricolage Grotesque", type: "Display" },
+    { name: "Instrument Sans", type: "Sans" },
+    { name: "Fraunces", type: "Serif" },
+    { name: "Newsreader", type: "Serif" },
+    { name: "Source Serif 4", type: "Serif" },
+    { name: "Lora", type: "Serif" },
+    { name: "Spectral", type: "Serif" }
+  ];
+
+  var body = "When you set up email in Business Central using the Microsoft Graph connector, the account type you choose matters more than it first appears. Here is a quick reference for delegated versus application permissions.";
+  var tags = ["Business Central", "Microsoft Graph", "Email"];
+  var grid = document.getElementById("grid");
+  var chosen = null;
+
+  function esc(s){ return s.replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+
+  function render() {
+    var brand = document.getElementById("brandText").value || "Wingate365";
+    var title = document.getElementById("titleText").value || "Sample heading";
+    grid.innerHTML = fonts.map(function(f, i) {
+      var stack = "'" + f.name + "', sans-serif";
+      var cur = f.tag === "current" ? '<span class="badge">current</span>' : '';
+      var pills = tags.map(function(t){ return '<span class="s-pill" style="font-family:'+stack+'">'+esc(t)+'</span>'; }).join('');
+      return '<div class="card" style="font-family:'+stack+'">' +
+        '<div class="card-head">' +
+          '<span class="font-name">'+esc(f.name)+'</span>' +
+          '<span class="badges">'+cur+'<span class="badge">'+f.type+'</span>' +
+          '<button class="pick" data-font="'+esc(f.name)+'" type="button">Use this</button></span>' +
+        '</div>' +
+        '<div class="s-brand">'+esc(brand)+'</div>' +
+        '<div class="s-tag" style="font-family:var(--ui)">Business Central, Dynamics 365 and Microsoft cloud notes</div>' +
+        '<div class="s-title">'+esc(title)+'</div>' +
+        '<div class="s-meta" style="font-family:var(--ui)">12 June 2026 · 1 min read</div>' +
+        '<p class="s-body">'+esc(body)+'</p>' +
+        '<div class="s-pills">'+pills+'</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  grid.addEventListener("click", function(e){
+    var btn = e.target.closest(".pick");
+    if (!btn) return;
+    chosen = btn.getAttribute("data-font");
+    document.querySelectorAll(".pick").forEach(function(b){ b.classList.remove("chosen"); b.textContent = "Use this"; });
+    btn.classList.add("chosen"); btn.textContent = "Chosen ✓";
+    document.getElementById("chosenNote").textContent = 'You picked: ' + chosen + ' — tell the assistant "use ' + chosen + '" to apply it.';
+    document.getElementById("chosenNote").scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+
+  document.getElementById("brandText").addEventListener("input", render);
+  document.getElementById("titleText").addEventListener("input", render);
+  document.getElementById("themeBtn").addEventListener("click", function(){
+    var root = document.documentElement;
+    root.setAttribute("data-theme", root.getAttribute("data-theme") === "dark" ? "light" : "dark");
+  });
+
+  render();
+</script>
+</body>
+</html>

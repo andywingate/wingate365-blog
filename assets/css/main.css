@@ -4,11 +4,12 @@
    ========================================================================== */
 
 :root {
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: "Figtree", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "Figtree", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: "SFMono-Regular", "Cascadia Code", Consolas, "Liberation Mono", Menlo, monospace;
 
   --max-width: 46rem;
-  --max-width-wide: 60rem;
+  --max-width-wide: 64rem;
 
   /* Light theme */
   --bg: #ffffff;
@@ -73,7 +74,7 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
   margin-inline: auto;
   padding-inline: 1.25rem;
 }
-.container-wide { max-width: 64rem; }
+.container-wide { max-width: var(--max-width-wide); }
 
 .skip-link {
   position: absolute;
@@ -106,8 +107,9 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
 .brand { display: flex; flex-direction: column; line-height: 1.15; }
 .brand:hover { text-decoration: none; }
 .brand-name {
-  font-weight: 800;
-  font-size: 1.6rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 2rem;
   color: var(--heading);
   letter-spacing: -0.02em;
 }
@@ -221,6 +223,7 @@ h1, h2, h3, h4 {
   line-height: 1.25;
   font-weight: 800;
   letter-spacing: -0.015em;
+  font-family: var(--font-display);
 }
 
 .muted { color: var(--text-muted); }
