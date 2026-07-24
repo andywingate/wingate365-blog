@@ -580,6 +580,7 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
 /* Post footer + back link ------------------------------------------------- */
 .post-footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
 .back-link { font-weight: 600; }
+.gh-date-link { color: inherit; text-decoration: none; cursor: pointer; }
 
 /* LinkedIn discussion CTA ------------------------------------------------- */
 .li-discuss {
