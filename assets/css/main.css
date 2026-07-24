@@ -883,6 +883,14 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
   .archive-main { grid-column: 1; grid-row: auto; }
 }
 
+/* Feed Informer widget dark-mode overrides -------------------------------- */
+[data-theme="dark"] .feed-widget span.description { color: var(--text) !important; }
+[data-theme="dark"] .feed-widget span.date { color: var(--text-muted) !important; }
+[data-theme="dark"] .feed-widget span.grey { color: var(--text-muted) !important; }
+[data-theme="dark"] .feed-widget a { color: var(--accent) !important; }
+[data-theme="dark"] .feed-widget p.item { border-bottom-color: var(--border) !important; }
+}
+
 @media (max-width: 48rem) {
   .header-inner { position: relative; }
   .nav-toggle { display: inline-flex; }

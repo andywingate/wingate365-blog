@@ -54,6 +54,8 @@ the community admin.
 Prefer to access the feed directly? Here's the link:
 [feed.informer.com/digests/MBQAFIPSON/feeder.rss](https://feed.informer.com/digests/MBQAFIPSON/feeder.rss)
 
+<div class="feed-widget" style="background: var(--bg-subtle); border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow); padding: 1.25rem 1.5rem; margin-top: 1rem;">
 <script type="text/javascript" src="https://feed.informer.com/widgets/A5YPC0GCK0.js"></script>
 <noscript><a href="https://feed.informer.com/widgets/A5YPC0GCK0.html">"Blog Page"</a>
 Powered by <a href="https://feed.informer.com/">RSS Feed Informer</a></noscript>
+</div>
