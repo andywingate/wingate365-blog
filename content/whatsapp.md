@@ -53,3 +53,7 @@ the community admin.
 
 Prefer to access the feed directly? Here's the link:
 [feed.informer.com/digests/MBQAFIPSON/feeder.rss](https://feed.informer.com/digests/MBQAFIPSON/feeder.rss)
+
+<script type="text/javascript" src="http://feed.informer.com/widgets/A5YPC0GCK0.js"></script>
+<noscript><a href="http://feed.informer.com/widgets/A5YPC0GCK0.html">"Blog Page"</a>
+Powered by <a href="http://feed.informer.com/">RSS Feed Informer</a></noscript>
